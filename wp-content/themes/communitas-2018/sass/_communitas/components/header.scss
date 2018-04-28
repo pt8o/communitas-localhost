@@ -1,0 +1,65 @@
+#masthead {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 $padding-md;
+
+  // LOGO
+  .site-branding {
+    display: inline-block;
+  }
+
+  // TOP MENU
+  // collapses on mobile
+  .main-navigation {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+
+    // The menu options themselves
+    #primary-menu {
+      position: relative;
+
+      @media screen and (max-width: $break-tablet) {
+        position: absolute;
+        margin-right: $padding-md;
+        right: 0;
+        text-align: right;
+      }
+
+      // Individual menu option
+      .menu-item {
+        display: inline-block;
+        float: none;
+        margin-left: $padding-md;
+
+        @media screen and (max-width: $break-tablet) {
+          display: block;
+          margin-left: 0;
+        }
+      }
+
+      // Submenus
+      .menu-item-has-children {
+        .children {
+          @media screen and (max-width: $break-tablet) {
+            position: relative;
+            left: auto;
+            z-index: auto;
+            float: none;
+            // margin-left: $padding-sm;
+            // padding-left: $padding-sm;
+            // border-left: 1px solid;
+            box-shadow: none;
+          }
+        }
+      }
+
+      // Donate button
+      .menu-item-type-custom {
+        border: 1px solid;
+        padding: $padding-sm $padding-md;
+      }
+    }
+  }
+}

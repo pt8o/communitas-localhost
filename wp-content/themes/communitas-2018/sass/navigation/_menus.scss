@@ -1,8 +1,8 @@
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	// clear: both;
+	// display: block;
+	// float: left;
+	// width: 100%;
 
 	ul {
 		display: none;
@@ -70,19 +70,23 @@
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle {
+	display: none;
+}
+.main-navigation ul {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+@media screen and (max-width: 768px) {
+  /* Small menu. */
+  .main-navigation ul {
+    display: none;
+  }
+
+  .menu-toggle,
+  .main-navigation.toggled ul {
+  	display: block;
+  }
 }
 
 .comment-navigation,

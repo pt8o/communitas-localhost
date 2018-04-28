@@ -72,7 +72,7 @@ msgid "Skip to content"
 msgstr ""
 
 #: header.php:45
-msgid "Primary Menu"
+msgid "Menu"
 msgstr ""
 
 #: inc/template-tags.php:52
