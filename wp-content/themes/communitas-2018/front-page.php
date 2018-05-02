@@ -37,8 +37,7 @@ get_header();
                       webkitallowfullscreen
                       mozallowfullscreen
                       allowfullscreen
-                    >
-                    </iframe>
+                    ></iframe>
                   </div>
                   <script src="https://player.vimeo.com/api/player.js"></script>
                 <?php
@@ -60,8 +59,8 @@ get_header();
             endwhile;
           endif;
     		?>
-        <button class="slideshow-control left">&lt;</button>
-        <button class="slideshow-control right">&gt;</button>
+        <button id="slide-left" class="slideshow-control">&lt;</button>
+        <button id="slide-right" class="slideshow-control">&gt;</button>
       </div>
 
 		</main><!-- #main -->
