@@ -1,4 +1,20 @@
+// Layout
 $padding-sm: 8px;
 $padding-md: 16px;
 
 $break-tablet: 768px;
+
+// Colours
+$black: #000;
+$white: #fff;
+
+// Fonts
+$headline: 24px;
+$title: 20px;
+$paragraph: 16px;
+
+%headline {
+  font-size: $headline;
+  font-weight: 600;
+  text-transform: uppercase;
+}

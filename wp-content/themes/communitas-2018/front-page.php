@@ -47,7 +47,7 @@ get_header();
               if ($caption != ''):
                 ?>
                   <div class="caption">
-                    <?php echo $caption ?>
+                    <span><?php echo $caption ?></span>
                   </div>
                 <?php
               endif;
