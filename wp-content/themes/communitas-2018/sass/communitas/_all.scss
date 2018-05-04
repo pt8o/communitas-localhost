@@ -1,3 +1,25 @@
 @import 'variables';
+
+// Global styles
+button {
+  background-color: $black;
+  border: 1px solid $white;
+  color: $white;
+}
+
+%button-round {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  text-align: center;
+  font-weight: 700;
+
+  &:hover, &:focus {
+    color: $black;
+    background-color: $white;    
+  }
+}
+
+// Component and page imports
 @import 'components/_all';
 @import 'pages/_all';

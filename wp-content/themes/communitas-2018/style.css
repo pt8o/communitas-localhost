@@ -824,6 +824,21 @@ object {
   font-weight: 600;
   text-transform: uppercase; }
 
+button {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff; }
+
+.home #slideshow .slideshow-control {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  text-align: center;
+  font-weight: 700; }
+  .home #slideshow .slideshow-control:hover, .home #slideshow .slideshow-control:focus {
+    color: #000;
+    background-color: #fff; }
+
 #masthead {
   position: relative;
   display: flex;
@@ -863,9 +878,29 @@ object {
         padding: 8px 16px; }
 
 .home #slideshow {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 66vw;
+  max-height: 600px;
+  overflow: hidden; }
   .home #slideshow .entry {
-    position: absolute; }
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .home #slideshow .entry .image {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center; }
+    .home #slideshow .entry.before {
+      left: auto;
+      right: 100%; }
+    .home #slideshow .entry.after {
+      left: 100%;
+      right: auto; }
+    .home #slideshow .entry.active {
+      left: 0;
+      right: auto; }
   .home #slideshow .caption {
     position: absolute;
     right: 10%;
@@ -876,5 +911,13 @@ object {
     padding: 8px;
     background-color: #000;
     color: #fff; }
+  .home #slideshow .slideshow-control {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px; }
+    .home #slideshow .slideshow-control#slide-left {
+      left: 16px; }
+    .home #slideshow .slideshow-control#slide-right {
+      right: 16px; }
 
 /*# sourceMappingURL=style.css.map */
