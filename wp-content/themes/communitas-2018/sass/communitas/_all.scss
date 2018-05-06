@@ -1,10 +1,24 @@
 @import 'variables';
+@import 'layout';
 
 // Global styles
-button {
-  background-color: $black;
-  border: 1px solid $white;
+a {
+  border-bottom: 1px dotted transparent;
+
+  &:hover, &:focus {
+    border-bottom: 1px dotted;
+  }
+}
+
+button, %button {
+  background-color: $blue;
   color: $white;
+  border: 1px solid;
+
+  &:hover, &:focus {
+    color: $blue;
+    background-color: $white;
+  }
 }
 
 %button-round {
@@ -13,11 +27,6 @@ button {
   border-radius: 24px;
   text-align: center;
   font-weight: 700;
-
-  &:hover, &:focus {
-    color: $black;
-    background-color: $white;    
-  }
 }
 
 // Component and page imports

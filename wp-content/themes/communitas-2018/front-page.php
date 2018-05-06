@@ -65,7 +65,36 @@ get_header();
 
       <section>
         <p><?php the_field('about_communitas'); ?></p>
-        <div class="card responsive-1_3"></div>
+        <div class="card responsive third">
+          <?php $why_it_matters = get_field('why_it_matters'); ?>
+          <h4><?php echo $why_it_matters['title']; ?></h4>
+          <p><?php echo $why_it_matters['text']; ?></p>
+        </div><div class="card responsive third">
+          <?php $how_we_work = get_field('how_we_work'); ?>
+          <h4><?php echo $how_we_work['title']; ?></h4>
+          <p><?php echo $how_we_work['text']; ?></p>
+        </div><div class="card responsive third">
+          <?php $how_contribute = get_field('how_contribute'); ?>
+          <h4><?php echo $how_contribute['title']; ?></h4>
+          <p><?php echo $how_contribute['text']; ?></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="card responsive half">
+          <?php $our_impact = get_field('our_impact'); ?>
+          <h4><?php echo $our_impact['title']?></h4>
+          <p><?php echo $our_impact['text']?></p>
+        </div><div class="card responsive half">
+          <?php $hear_the_latest = get_field('hear_the_latest'); ?>
+          <h4><?php echo $hear_the_latest['title']?></h4>
+          <p><?php echo $hear_the_latest['text']?></p>
+
+          <form>
+            <input type="text" placeholder="<?php echo $hear_the_latest['email_placeholder'] ?>"/>
+            <button><?php echo $hear_the_latest['sign_up_button'] ?></button>
+          </form>
+        </div>
       </section>
 
 

@@ -537,11 +537,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #005dab; }
   a:visited {
-    color: purple; }
+    color: #005dab; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #005dab; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -824,10 +824,26 @@ object {
   font-weight: 600;
   text-transform: uppercase; }
 
-button {
-  background-color: #000;
-  border: 1px solid #fff;
-  color: #fff; }
+.responsive {
+  vertical-align: top;
+  display: inline-block; }
+  .responsive.half {
+    width: 50%; }
+  .responsive.third {
+    width: 33.3%; }
+
+a {
+  border-bottom: 1px dotted transparent; }
+  a:hover, a:focus {
+    border-bottom: 1px dotted; }
+
+button, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
+  background-color: #005dab;
+  color: #fff;
+  border: 1px solid; }
+  button:hover, button:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a:focus {
+    color: #005dab;
+    background-color: #fff; }
 
 .home #slideshow .slideshow-control {
   width: 48px;
@@ -835,9 +851,6 @@ button {
   border-radius: 24px;
   text-align: center;
   font-weight: 700; }
-  .home #slideshow .slideshow-control:hover, .home #slideshow .slideshow-control:focus {
-    color: #000;
-    background-color: #fff; }
 
 #masthead {
   position: relative;
@@ -845,7 +858,8 @@ button {
   align-items: center;
   padding: 16px 16px 0; }
   #masthead .site-branding {
-    display: inline-block; }
+    display: inline-block;
+    max-width: 160px; }
   #masthead .main-navigation {
     display: inline-block;
     vertical-align: middle;
@@ -873,8 +887,7 @@ button {
           z-index: auto;
           float: none;
           box-shadow: none; } }
-      #masthead .main-navigation #primary-menu .menu-item-type-custom {
-        border: 1px solid;
+      #masthead .main-navigation #primary-menu .menu-item-type-custom a {
         padding: 8px 16px; }
 
 .home #slideshow {

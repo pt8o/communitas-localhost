@@ -7,6 +7,7 @@
   // LOGO
   .site-branding {
     display: inline-block;
+    max-width: 160px;
   }
 
   // TOP MENU
@@ -57,8 +58,10 @@
 
       // Donate button
       .menu-item-type-custom {
-        border: 1px solid;
-        padding: $padding-sm $padding-md;
+        a {
+          @extend %button;
+          padding: $padding-sm $padding-md;
+        }
       }
     }
   }
