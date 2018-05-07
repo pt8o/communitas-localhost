@@ -61,9 +61,8 @@ get_header();
         <button id="slide-left" class="slideshow-control">&lt;</button>
         <button id="slide-right" class="slideshow-control">&gt;</button>
       </div>
-      <!-- end slideshow -->
 
-      <section>
+      <section class="bg-accent">
         <p><?php the_field('about_communitas'); ?></p>
         <div class="card responsive third">
           <?php $why_it_matters = get_field('why_it_matters'); ?>

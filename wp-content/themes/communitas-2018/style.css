@@ -824,6 +824,9 @@ object {
   font-weight: 600;
   text-transform: uppercase; }
 
+*::selection, *::-moz-selection {
+  background-color: #fff530; }
+
 .responsive {
   vertical-align: top;
   display: inline-block; }
@@ -831,6 +834,21 @@ object {
     width: 50%; }
   .responsive.third {
     width: 33.3%; }
+
+.bg-dark {
+  color: #fff;
+  background-color: #000; }
+
+.bg-accent {
+  background-color: #70a6bd; }
+
+section {
+  padding: 16px; }
+
+.card {
+  border: 1px solid #fff530;
+  padding: 16px;
+  border-radius: 8px; }
 
 a {
   border-bottom: 1px dotted transparent; }
@@ -932,5 +950,8 @@ button, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
       left: 16px; }
     .home #slideshow .slideshow-control#slide-right {
       right: 16px; }
+.home section {
+  float: left;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

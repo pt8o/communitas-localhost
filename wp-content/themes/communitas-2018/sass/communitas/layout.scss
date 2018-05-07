@@ -9,3 +9,22 @@
   //
   // }
 }
+
+.bg-dark {
+  color: $white;
+  background-color: $black;
+}
+
+.bg-accent {
+  background-color: $teal;
+}
+
+section {
+  padding: $padding-md;
+}
+
+.card {
+  border: 1px solid $yellow;
+  padding: $padding-md;
+  border-radius: $corners;
+}

@@ -3,13 +3,16 @@ $padding-sm: 8px;
 $padding-md: 16px;
 
 $break-tablet: 768px;
+$corners: 8px;
 
 // Colours
 $black: #000;
 $white: #fff;
 $blue: #005dab;
+$teal: #70a6bd;
+$yellow: #fff530;
 
-// Fonts
+// Font & text
 $headline: 24px;
 $title: 20px;
 $paragraph: 16px;
@@ -18,4 +21,8 @@ $paragraph: 16px;
   font-size: $headline;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+*::selection, *::-moz-selection {
+  background-color: $yellow;
 }
