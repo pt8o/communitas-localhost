@@ -29,6 +29,25 @@ button, %button {
   font-weight: 700;
 }
 
+// Misc overwrites
+
+// LOGO
+.site-branding {
+  display: inline-block;
+  max-width: 160px;
+}
+
+a.custom-logo-link {
+  &:hover {
+    border-bottom-color: transparent;
+  }
+
+  &:focus {
+    border: 1px dotted;
+  }
+}
+
+
 // Component and page imports
 @import 'components/_all';
 @import 'pages/_all';
