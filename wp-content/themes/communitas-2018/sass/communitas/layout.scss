@@ -4,30 +4,28 @@
 
   &.half {
     width: calc(49.9% - #{$padding-sm});
-
-    &:first-of-type {
-      margin-right: $padding-sm;
-    }
-
-    &:last-of-type {
-      margin-left: $padding-sm;
-    }
   }
 
   &.third {
     width: calc(33.3% - #{$padding-sm});
     margin-left: $padding-xs;
     margin-right: $padding-xs;
+  }
 
-    &:first-of-type {
-      margin-left: 0;
-      margin-right: $padding-sm;
-    }
+  &.quarter {
+    width: calc(25% - #{$padding-sm});
+    margin-left: $padding-xs;
+    margin-right: $padding-xs;
+  }
 
-    &:last-of-type {
-      margin-left: $padding-sm;
-      margin-right: 0;
-    }
+  &:first-of-type {
+    margin-left: 0;
+    margin-right: $padding-sm;
+  }
+
+  &:last-of-type {
+    margin-left: $padding-sm;
+    margin-right: 0;
   }
 
   // @media all and (max-width: $tablet) {

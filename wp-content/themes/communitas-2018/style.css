@@ -832,24 +832,24 @@ object {
   display: inline-block; }
   .responsive.half {
     width: calc(49.9% - 8px); }
-    .responsive.half:first-of-type {
-      margin-right: 8px; }
-    .responsive.half:last-of-type {
-      margin-left: 8px; }
   .responsive.third {
     width: calc(33.3% - 8px);
     margin-left: 4px;
     margin-right: 4px; }
-    .responsive.third:first-of-type {
-      margin-left: 0;
-      margin-right: 8px; }
-    .responsive.third:last-of-type {
-      margin-left: 8px;
-      margin-right: 0; }
+  .responsive.quarter {
+    width: calc(25% - 8px);
+    margin-left: 4px;
+    margin-right: 4px; }
+  .responsive:first-of-type {
+    margin-left: 0;
+    margin-right: 8px; }
+  .responsive:last-of-type {
+    margin-left: 8px;
+    margin-right: 0; }
 
 .bg-dark {
-  color: #fff;
-  background-color: #000; }
+  color: #ffffff;
+  background-color: #000000; }
 
 .bg-accent {
   background-color: #70a6bd; }
@@ -863,17 +863,26 @@ section {
   border-radius: 8px; }
 
 a {
+  display: inline-block;
+  text-decoration: none;
   border-bottom: 1px dotted transparent; }
   a:hover, a:focus {
     border-bottom: 1px dotted; }
 
-button, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
+button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
+  color: #ffffff;
   background-color: #005dab;
-  color: #fff;
   border: 1px solid; }
-  button:hover, button:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a:focus {
+  button:hover, button:focus, .button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a:hover, .button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a:focus {
     color: #005dab;
-    background-color: #fff; }
+    background-color: #ffffff;
+    border: 1px solid; }
+  button.inverted, .inverted.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted {
+    color: #005dab;
+    background-color: #ffffff; }
+    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:hover, .inverted.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:focus {
+      color: #ffffff;
+      background-color: #005dab; }
 
 .home #slideshow .slideshow-control {
   width: 48px;
@@ -881,6 +890,9 @@ button, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
   border-radius: 24px;
   text-align: center;
   font-weight: 700; }
+
+.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
+  padding: 8px 16px; }
 
 .site-branding {
   display: inline-block;
@@ -923,8 +935,24 @@ a.custom-logo-link:focus {
           z-index: auto;
           float: none;
           box-shadow: none; } }
-      #masthead .main-navigation #primary-menu .menu-item-type-custom a {
-        padding: 8px 16px; }
+
+footer {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #005dab;
+  padding: 16px; }
+  footer .custom-logo-link {
+    display: flex;
+    align-items: center; }
+  footer .responsive.contacts-container {
+    margin-left: auto;
+    margin-right: 32px;
+    text-align: center; }
+    footer .responsive.contacts-container a:not(.button-square) {
+      color: #ffffff; }
+    footer .responsive.contacts-container .button-square {
+      margin-top: 8px; }
 
 .home #slideshow {
   position: relative;
@@ -958,8 +986,8 @@ a.custom-logo-link:focus {
     text-align: right;
     line-height: 2em;
     padding: 8px;
-    background-color: #000;
-    color: #fff; }
+    background-color: #000000;
+    color: #ffffff; }
   .home #slideshow .slideshow-control {
     position: absolute;
     top: 50%;

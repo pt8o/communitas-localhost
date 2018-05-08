@@ -53,8 +53,7 @@
       // Donate button
       .menu-item-type-custom {
         a {
-          @extend %button;
-          padding: $padding-sm $padding-md;
+          @extend %button-square;
         }
       }
     }

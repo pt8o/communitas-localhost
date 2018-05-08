@@ -17,7 +17,7 @@ get_header();
               $content_type = get_sub_field('content_type');
 
               ?>
-                <div class="entry">
+                <div class="entry entry-<?php echo get_row_index(); ?>">
               <?php
 
               if ($content_type == 'image'):

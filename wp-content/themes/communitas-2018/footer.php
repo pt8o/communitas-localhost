@@ -30,7 +30,29 @@
     <!-- .site-info -->
 
     <div class="responsive quarter site-branding">
-  			<?php the_custom_logo(); ?>
+  		<img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_inverted.jpg' ) ); ?>" />
+    </div>
+
+    <div class="responsive quarter address paragraph">
+      3974 Notre Dame Street West, Suite B<br/>
+      Montreal, QC H4C 1R1<br/>
+      +1 514 244 6147<br/>
+      info@communitasmontreal.org
+    </div>
+
+    <div class="responsive quarter"></div>
+    <div class="responsive contacts-container">
+      <a class="responsive" href="mailto:info@communitasmontreal.org">
+        Email
+      </a><a class="responsive" href="https://twitter.com/Communitas_MTL">
+        Tw
+      </a><a class="responsive" href="https://www.facebook.com/communitasmontreal/">
+        Fb
+      </a><br/>
+
+      <a class="button-square inverted" href="http://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d10867">
+        Donate
+      </a>
     </div>
 
 	</footer><!-- #colophon -->

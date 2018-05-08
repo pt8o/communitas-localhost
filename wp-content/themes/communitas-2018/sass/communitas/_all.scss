@@ -3,6 +3,8 @@
 
 // Global styles
 a {
+  display: inline-block;
+  text-decoration: none;
   border-bottom: 1px dotted transparent;
 
   &:hover, &:focus {
@@ -11,13 +13,24 @@ a {
 }
 
 button, %button {
-  background-color: $blue;
   color: $white;
+  background-color: $blue;
   border: 1px solid;
 
   &:hover, &:focus {
     color: $blue;
     background-color: $white;
+    border: 1px solid;
+  }
+
+  &.inverted {
+    color: $blue;
+    background-color: $white;
+
+    &:hover, &:focus {
+      color: $white;
+      background-color: $blue;
+    }
   }
 }
 
@@ -27,6 +40,11 @@ button, %button {
   border-radius: 24px;
   text-align: center;
   font-weight: 700;
+}
+
+.button-square, %button-square {
+  @extend %button;
+  padding: $padding-sm $padding-md;
 }
 
 // Misc overwrites
