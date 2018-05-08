@@ -17,7 +17,7 @@ get_header();
               $content_type = get_sub_field('content_type');
 
               ?>
-                <div class="entry entry-<?php echo get_row_index(); ?>">
+                <div class="entry" id="entry-<?php echo get_row_index(); ?>">
               <?php
 
               if ($content_type == 'image'):
@@ -30,7 +30,7 @@ get_header();
               else:
                 $vimeo_id = get_sub_field('vimeo_id');
                 ?>
-                  <!-- <div style="padding:56.25% 0 0 0;position:relative;">
+                  <div style="position:relative;width:100%;height:100%;">
                     <iframe
                       src="https://player.vimeo.com/video/<?php echo $vimeo_id ?>?title=0&byline=0&portrait=0"
                       style="position:absolute;top:0;left:0;width:100%;height:100%;"
@@ -38,7 +38,7 @@ get_header();
                       webkitallowfullscreen mozallowfullscreen allowfullscreen
                     ></iframe>
                   </div>
-                  <script src="https://player.vimeo.com/api/player.js"></script> -->
+                  <script src="https://player.vimeo.com/api/player.js"></script>
                 <?php
               endif;
 
@@ -60,6 +60,20 @@ get_header();
     		?>
         <button id="slide-left" class="slideshow-control">&lt;</button>
         <button id="slide-right" class="slideshow-control">&gt;</button>
+        <div id="slideshow-index">
+          <?php
+            if (have_rows('slideshow_content')):
+              while (have_rows('slideshow_content')) : the_row();
+                ?>
+                  <button
+                    class="slideshow-index"
+                    id="slideshow-index-<?php echo get_row_index() ?>"
+                  ></button>
+                <?php
+              endwhile;
+            endif;
+          ?>
+        </div>
       </div>
 
       <section class="bg-accent">

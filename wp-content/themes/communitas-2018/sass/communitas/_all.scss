@@ -23,6 +23,17 @@ button, %button {
     border: 1px solid;
   }
 
+  &[disabled], &.disabled {
+    opacity: 0.5;
+    color: $white;
+    background-color: $black;
+
+    &:hover, &:focus {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
   &.inverted {
     color: $blue;
     background-color: $white;

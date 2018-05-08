@@ -15,6 +15,18 @@
         slides.push($(this));
     });
 
+    var runSlideshow = function() {
+        $('#slideshow .active').removeClass('active');
+        slides[current].addClass('active');
+        for (var i = 0; i < slides.length - 1; i++) {
+            if (i < current) {
+                slides[i].removeClass('right').addClass('left');
+            }
+            if (i > current) {
+                slides[i].removeClass('left').addClass('right');
+            }
+        }
+    };
 
     $('.slideshow-control').on('click tap', function() {
         var max = slides.length - 1;
@@ -28,7 +40,7 @@
         }
 
         if (current != temp) {
-            console.log(current);
+            runSlideshow();
         }
     });
 } )( jQuery );

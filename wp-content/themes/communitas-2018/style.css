@@ -877,6 +877,13 @@ button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type
     color: #005dab;
     background-color: #ffffff;
     border: 1px solid; }
+  button[disabled], button.disabled, [disabled].button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled], .disabled.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled {
+    opacity: 0.5;
+    color: #ffffff;
+    background-color: #000000; }
+    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:hover, [disabled].button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:focus, .disabled.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:hover, .disabled.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:focus {
+      color: #ffffff;
+      background-color: #000000; }
   button.inverted, .inverted.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted {
     color: #005dab;
     background-color: #ffffff; }
@@ -963,21 +970,19 @@ footer {
   .home #slideshow .entry {
     position: absolute;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition: left 300ms, right 300ms; }
     .home #slideshow .entry .image {
       width: 100%;
       height: 100%;
       background-size: cover;
       background-position: center; }
-    .home #slideshow .entry.before {
-      left: auto;
-      right: 100%; }
-    .home #slideshow .entry.after {
-      left: 100%;
-      right: auto; }
+    .home #slideshow .entry.left {
+      left: -100%; }
+    .home #slideshow .entry.right {
+      left: 100%; }
     .home #slideshow .entry.active {
-      left: 0;
-      right: auto; }
+      left: 0; }
   .home #slideshow .caption {
     position: absolute;
     right: 10%;
@@ -996,6 +1001,12 @@ footer {
       left: 16px; }
     .home #slideshow .slideshow-control#slide-right {
       right: 16px; }
+  .home #slideshow #slideshow-index {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    bottom: 16px;
+    text-align: center; }
 .home section {
   float: left;
   width: 100%; }
