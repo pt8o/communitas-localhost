@@ -66,7 +66,7 @@ get_header();
               while (have_rows('slideshow_content')) : the_row();
                 ?>
                   <button
-                    class="slideshow-index"
+                    class="slideshow-index button-round"
                     id="slideshow-index-<?php echo get_row_index() ?>"
                   ></button>
                 <?php

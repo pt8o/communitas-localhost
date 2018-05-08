@@ -16,6 +16,7 @@ button, %button {
   color: $white;
   background-color: $blue;
   border: 1px solid;
+  padding: 0;
 
   &:hover, &:focus {
     color: $blue;
@@ -45,7 +46,7 @@ button, %button {
   }
 }
 
-%button-round {
+%button-round, .button-round {
   width: 48px;
   height: 48px;
   border-radius: 24px;
