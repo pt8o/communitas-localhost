@@ -10,7 +10,7 @@ get_header();
 		<main id="main" class="site-main">
 
       <!-- start slideshow -->
-      <div id="slideshow">
+      <div class="slideshow">
         <?php
     		  if (have_rows('slideshow_content')):
             while (have_rows('slideshow_content')) : the_row();
@@ -76,7 +76,7 @@ get_header();
         </div>
       </div>
 
-      <section class="bg-accent">
+      <section id="about-communitas">
         <p><?php the_field('about_communitas'); ?></p>
         <div class="card responsive third">
           <?php $why_it_matters = get_field('why_it_matters'); ?>

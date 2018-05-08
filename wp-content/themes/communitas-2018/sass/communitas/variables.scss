@@ -17,17 +17,6 @@ $blue: #005dab;
 $teal: #70a6bd;
 $yellow: #fff530;
 
-// Font & text
-$headline: 24px;
-$title: 20px;
-$paragraph: 16px;
-
-%headline {
-  font-size: $headline;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 *::selection, *::-moz-selection {
   background-color: $yellow;
 }

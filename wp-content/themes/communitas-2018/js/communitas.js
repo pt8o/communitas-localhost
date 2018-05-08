@@ -9,7 +9,7 @@
     // Slideshow
     var slides = [];
     var current = 0;
-    $('#slideshow .entry').each(function(i) {
+    $('.slideshow .entry').each(function(i) {
         if (i == 0) { $(this).addClass('active'); }
         if (i > 0) { $(this).addClass('right'); }
         slides.push($(this));
@@ -17,7 +17,7 @@
     var max = slides.length - 1;
 
     var runSlideshow = function() {
-        $('#slideshow .active').removeClass('active');
+        $('.slideshow .active').removeClass('active');
         slides[current].addClass('active');
         for (var i = 0; i < slides.length - 1; i++) {
             if (i < current) {

@@ -12,55 +12,7 @@ a {
   }
 }
 
-button, %button {
-  color: $white;
-  background-color: $blue;
-  border: 1px solid;
-  padding: 0;
-
-  &:hover, &:focus {
-    color: $blue;
-    background-color: $white;
-    border: 1px solid;
-  }
-
-  &[disabled], &.disabled {
-    opacity: 0.5;
-    color: $white;
-    background-color: $black;
-
-    &:hover, &:focus {
-      color: $white;
-      background-color: $black;
-    }
-  }
-
-  &.inverted {
-    color: $blue;
-    background-color: $white;
-
-    &:hover, &:focus {
-      color: $white;
-      background-color: $blue;
-    }
-  }
-}
-
-%button-round, .button-round {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  text-align: center;
-  font-weight: 700;
-}
-
-.button-square, %button-square {
-  @extend %button;
-  padding: $padding-sm $padding-md;
-}
-
 // Misc overwrites
-
 // LOGO
 .site-branding {
   display: inline-block;
@@ -79,5 +31,6 @@ a.custom-logo-link {
 
 
 // Component and page imports
+@import 'elements/_all';
 @import 'components/_all';
 @import 'pages/_all';

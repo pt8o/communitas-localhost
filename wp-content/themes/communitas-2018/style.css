@@ -853,7 +853,6 @@ section {
   padding: 16px; }
 
 .card {
-  border: 1px solid;
   padding: 16px;
   border-radius: 8px; }
 
@@ -863,6 +862,15 @@ a {
   border-bottom: 1px dotted transparent; }
   a:hover, a:focus {
     border-bottom: 1px dotted; }
+
+.site-branding {
+  display: inline-block;
+  max-width: 160px; }
+
+a.custom-logo-link:hover {
+  border-bottom-color: transparent; }
+a.custom-logo-link:focus {
+  border: 1px dotted; }
 
 button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
   color: #ffffff;
@@ -887,7 +895,7 @@ button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type
       color: #ffffff;
       background-color: #005dab; }
 
-.home #slideshow .slideshow-control, .button-round {
+.slideshow .slideshow-control, .button-round {
   width: 48px;
   height: 48px;
   border-radius: 24px;
@@ -897,14 +905,14 @@ button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type
 .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
   padding: 8px 16px; }
 
-.site-branding {
-  display: inline-block;
-  max-width: 160px; }
+h4 {
+  font-size: 24px;
+  font-weight: 600; }
 
-a.custom-logo-link:hover {
-  border-bottom-color: transparent; }
-a.custom-logo-link:focus {
-  border: 1px dotted; }
+h4 {
+  display: inline-block;
+  border-left: 8px solid #fff530;
+  padding-left: 16px; }
 
 #masthead {
   position: relative;
@@ -957,30 +965,30 @@ footer {
     footer .responsive.contacts-container .button-square {
       margin-top: 8px; }
 
-.home #slideshow {
+.slideshow {
   position: relative;
   width: 100%;
   height: 66vw;
   max-height: 600px;
   overflow: hidden; }
-  .home #slideshow .entry {
+  .slideshow .entry {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: left 600ms, right 600ms;
     background-color: #000000; }
-    .home #slideshow .entry .image {
+    .slideshow .entry .image {
       width: 100%;
       height: 100%;
       background-size: cover;
       background-position: center; }
-    .home #slideshow .entry.left {
+    .slideshow .entry.left {
       left: -100%; }
-    .home #slideshow .entry.right {
+    .slideshow .entry.right {
       left: 100%; }
-    .home #slideshow .entry.active {
+    .slideshow .entry.active {
       left: 0; }
-  .home #slideshow .caption {
+  .slideshow .caption {
     display: flex;
     align-items: center;
     position: absolute;
@@ -991,24 +999,25 @@ footer {
     padding: 8px 25% 8px 16px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff; }
-  .home #slideshow .slideshow-control {
+  .slideshow .slideshow-control {
     position: absolute;
     top: 50%;
     margin-top: -24px; }
-    .home #slideshow .slideshow-control#slide-left {
+    .slideshow .slideshow-control#slide-left {
       left: 16px; }
-    .home #slideshow .slideshow-control#slide-right {
+    .slideshow .slideshow-control#slide-right {
       right: 16px; }
-  .home #slideshow #slideshow-index {
+  .slideshow #slideshow-index {
     position: absolute;
     right: 16px;
     bottom: 16px;
     text-align: center; }
-    .home #slideshow #slideshow-index .slideshow-index {
+    .slideshow #slideshow-index .slideshow-index {
       width: 16px;
       height: 16px; }
-      .home #slideshow #slideshow-index .slideshow-index:first-of-type, .home #slideshow #slideshow-index .slideshow-index:last-of-type {
+      .slideshow #slideshow-index .slideshow-index:first-of-type, .slideshow #slideshow-index .slideshow-index:last-of-type {
         margin: 0; }
+
 .home section {
   float: left;
   width: 100%; }
