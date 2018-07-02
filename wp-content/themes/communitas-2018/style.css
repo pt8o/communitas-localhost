@@ -854,7 +854,9 @@ section {
 
 .card {
   padding: 16px;
-  border-radius: 8px; }
+  text-align: center; }
+  .card form {
+    display: inline-block; }
 
 a {
   display: inline-block;
@@ -872,26 +874,27 @@ a.custom-logo-link:hover {
 a.custom-logo-link:focus {
   border: 1px dotted; }
 
-button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
+button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a, input[type="button"] {
   color: #ffffff;
   background-color: #005dab;
   border: 1px solid;
-  padding: 0; }
-  button:hover, button:focus, .button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a:hover, .button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a:focus {
+  border-radius: 0;
+  padding: 8px 16px; }
+  button:hover, button:focus, .button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a:hover, .button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a:focus, input[type="button"]:hover, input[type="button"]:focus {
     color: #005dab;
     background-color: #ffffff;
     border: 1px solid; }
-  button[disabled], button.disabled, [disabled].button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled], .disabled.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled {
+  button[disabled], button.disabled, [disabled].button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled], .disabled.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled, input[type="button"][disabled], input[type="button"].disabled {
     opacity: 0.5;
     color: #ffffff;
     background-color: #000000; }
-    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:hover, [disabled].button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:focus, .disabled.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:hover, .disabled.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:focus {
+    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:hover, [disabled].button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:focus, .disabled.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:hover, .disabled.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:focus, input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="button"].disabled:hover, input[type="button"].disabled:focus {
       color: #ffffff;
       background-color: #000000; }
-  button.inverted, .inverted.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted {
+  button.inverted, .inverted.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted, input[type="button"].inverted {
     color: #005dab;
     background-color: #ffffff; }
-    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:hover, .inverted.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:focus {
+    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:hover, .inverted.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:focus, input[type="button"].inverted:hover, input[type="button"].inverted:focus {
       color: #ffffff;
       background-color: #005dab; }
 
@@ -900,12 +903,31 @@ button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type
   height: 48px;
   border-radius: 24px;
   text-align: center;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 0; }
 
 .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
   padding: 8px 16px; }
 
-h4 {
+.icon {
+  width: 24px;
+  height: 24px; }
+
+form {
+  display: flex;
+  height: 48px; }
+  form input[type="text"] {
+    padding-right: 16px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #005dab; }
+  form button {
+    margin-left: 8px; }
+
+.home #about-communitas .hook, .headline {
+  font-size: 36px; }
+
+h4, .title {
   font-size: 24px;
   font-weight: 600; }
 
@@ -961,7 +983,7 @@ footer {
     margin-right: 32px;
     text-align: center; }
     footer .responsive.contacts-container a:not(.button-square) {
-      color: #ffffff; }
+      margin: 0 8px; }
     footer .responsive.contacts-container .button-square {
       margin-top: 8px; }
 
@@ -1021,5 +1043,8 @@ footer {
 .home section {
   float: left;
   width: 100%; }
+.home #about-communitas .hook {
+  text-align: center;
+  padding: 32px 25%; }
 
 /*# sourceMappingURL=style.css.map */

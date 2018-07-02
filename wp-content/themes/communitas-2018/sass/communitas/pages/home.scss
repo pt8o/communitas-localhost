@@ -8,4 +8,19 @@
     float: left;
     width: 100%;
   }
+
+  #about-communitas {
+    .hook {
+      @extend %headline;
+      text-align: center;
+      padding: $padding-lg 25%;
+    }
+  }
+
+  // #why-how {
+  //   background-color: $yellow;
+  //   h4 {
+  //     border-color: $teal;
+  //   }
+  // }
 }

@@ -48,5 +48,9 @@ section {
 
 .card {
   padding: $padding-md;
-  border-radius: $corners;
+  text-align: center;
+  
+  form {
+    display: inline-block;
+  }
 }

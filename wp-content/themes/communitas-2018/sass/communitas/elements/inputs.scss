@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  height: 48px;
+
+  input[type="text"] {
+    padding-right: $padding-md;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $blue;
+  }
+
+  button {
+    margin-left: $padding-sm;
+  }
+}

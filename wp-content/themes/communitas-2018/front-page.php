@@ -77,7 +77,10 @@ get_header();
       </div>
 
       <section id="about-communitas">
-        <p><?php the_field('about_communitas'); ?></p>
+        <p class="hook"><?php the_field('about_communitas'); ?></p>
+      </section>
+
+      <section id="why-how">
         <div class="card responsive third">
           <?php $why_it_matters = get_field('why_it_matters'); ?>
           <h4><?php echo $why_it_matters['title']; ?></h4>

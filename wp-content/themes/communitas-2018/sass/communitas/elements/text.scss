@@ -1,15 +1,19 @@
 // Font & text
-$headline: 24px;
-$title: 20px;
+$headline: 36px;
+$title: 24px;
 $paragraph: 16px;
 
-%headline {
+%headline, .headline {
   font-size: $headline;
+}
+
+%title, .title {
+  font-size: $title;
   font-weight: 600;
 }
 
 h4 {
-  @extend %headline;
+  @extend %title;
   display: inline-block;
   border-left: 8px solid $yellow;
   padding-left: $padding-md;

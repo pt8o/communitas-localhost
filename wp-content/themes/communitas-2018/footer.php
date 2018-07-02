@@ -30,7 +30,7 @@
     <!-- .site-info -->
 
     <div class="responsive quarter site-branding">
-  		<img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_inverted.jpg' ) ); ?>" />
+  		<img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_inverted.jpg' ) ); ?>" alt="Communitas logo" />
     </div>
 
     <div class="responsive quarter address paragraph">
@@ -43,11 +43,11 @@
     <div class="responsive quarter"></div>
     <div class="responsive contacts-container">
       <a class="responsive" href="mailto:info@communitasmontreal.org">
-        Email
+        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-mail.png' ) ); ?>" alt="Email"/>
       </a><a class="responsive" href="https://twitter.com/Communitas_MTL">
-        Tw
+        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-twitter.png' ) ); ?>" alt="Twitter"/>
       </a><a class="responsive" href="https://www.facebook.com/communitasmontreal/">
-        Fb
+        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-facebook.png' ) ); ?>" alt="Facebook"/>
       </a><br/>
 
       <a class="button-square inverted" href="http://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d10867">
