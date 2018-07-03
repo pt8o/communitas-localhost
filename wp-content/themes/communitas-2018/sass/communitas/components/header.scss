@@ -1,8 +1,28 @@
 #masthead {
-  position: relative;
+  position: fixed;
   display: flex;
-  align-items: center;
+  vertical-align: middle;
   padding: $padding-md $padding-md 0;
+  width: 100%;
+  z-index: 100;
+
+  transition: background-color $transition;
+
+  &.scrolled {
+    background-color: $blue;
+  }
+
+  a {
+    color: $white;
+    font-weight: 600;
+    text-shadow: 4px 4px 12px $black;
+  }
+
+  // LOGO
+  .site-branding {
+    display: inline-block;
+    max-width: 144px;
+  }
 
   // TOP MENU
   // collapses on mobile
@@ -52,9 +72,8 @@
 
       // Donate button
       .menu-item-type-custom {
-        a {
-          @extend %button-square;
-        }
+        padding: $padding-sm $padding-md;
+        border: 1px solid $white;
       }
     }
   }

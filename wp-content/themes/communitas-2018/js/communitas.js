@@ -3,7 +3,25 @@
 */
 
 ( function( $ ) {
-    console.log('communitas script');
+    // TOP MENU
+    // Add class after scrolled down.
+    var scrolledFromTop = $(window).scrollTop();
+    var scrolledDown = scrolledFromTop > 0; 
+
+    $(window).scroll(function(ev) {
+        scrolledFromTop = $(window).scrollTop();
+
+        if (scrolledDown && scrolledFromTop === 0) {
+            $('#masthead').removeClass('scrolled');
+            scrolledDown = false;
+        }
+
+        if (!scrolledDown && scrolledFromTop > 0) {
+            $('#masthead').addClass('scrolled');
+            scrolledDown = true;
+        }
+
+    });
 
     // FRONT PAGE
     // Slideshow
@@ -16,7 +34,7 @@
     });
     var max = slides.length - 1;
 
-    var runSlideshow = function() {
+    const runSlideshow = function() {
         $('.slideshow .active').removeClass('active');
         slides[current].addClass('active');
         for (var i = 0; i < slides.length - 1; i++) {
@@ -49,9 +67,6 @@
         current = parseInt(
             $(this).attr('id').replace('slideshow-index-', '')
         ) - 1;
-
-        console.log(temp);
-        console.log(current);
 
         if (current != temp) {
             runSlideshow();

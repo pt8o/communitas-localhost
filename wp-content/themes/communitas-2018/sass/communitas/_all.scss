@@ -2,6 +2,10 @@
 @import 'layout';
 
 // Global styles
+body {
+  font-family: 'Mada', sans-serif;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -13,12 +17,6 @@ a {
 }
 
 // Misc overwrites
-// LOGO
-.site-branding {
-  display: inline-block;
-  max-width: 160px;
-}
-
 a.custom-logo-link {
   &:hover {
     border-bottom-color: transparent;

@@ -858,6 +858,9 @@ section {
   .card form {
     display: inline-block; }
 
+body {
+  font-family: 'Mada', sans-serif; }
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -865,36 +868,32 @@ a {
   a:hover, a:focus {
     border-bottom: 1px dotted; }
 
-.site-branding {
-  display: inline-block;
-  max-width: 160px; }
-
 a.custom-logo-link:hover {
   border-bottom-color: transparent; }
 a.custom-logo-link:focus {
   border: 1px dotted; }
 
-button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a, input[type="button"] {
+button, .button-square, input[type="button"] {
   color: #ffffff;
   background-color: #005dab;
   border: 1px solid;
   border-radius: 0;
   padding: 8px 16px; }
-  button:hover, button:focus, .button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a:hover, .button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a:focus, input[type="button"]:hover, input[type="button"]:focus {
+  button:hover, button:focus, .button-square:hover, .button-square:focus, input[type="button"]:hover, input[type="button"]:focus {
     color: #005dab;
     background-color: #ffffff;
     border: 1px solid; }
-  button[disabled], button.disabled, [disabled].button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled], .disabled.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled, input[type="button"][disabled], input[type="button"].disabled {
+  button[disabled], button.disabled, [disabled].button-square, .disabled.button-square, input[type="button"][disabled], input[type="button"].disabled {
     opacity: 0.5;
     color: #ffffff;
     background-color: #000000; }
-    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:hover, [disabled].button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a[disabled]:focus, .disabled.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:hover, .disabled.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.disabled:focus, input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="button"].disabled:hover, input[type="button"].disabled:focus {
+    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, [disabled].button-square:focus, .disabled.button-square:hover, .disabled.button-square:focus, input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="button"].disabled:hover, input[type="button"].disabled:focus {
       color: #ffffff;
       background-color: #000000; }
-  button.inverted, .inverted.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted, input[type="button"].inverted {
+  button.inverted, .inverted.button-square, input[type="button"].inverted {
     color: #005dab;
     background-color: #ffffff; }
-    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:hover, .inverted.button-square:focus, #masthead .main-navigation #primary-menu .menu-item-type-custom a.inverted:focus, input[type="button"].inverted:hover, input[type="button"].inverted:focus {
+    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, .inverted.button-square:focus, input[type="button"].inverted:hover, input[type="button"].inverted:focus {
       color: #ffffff;
       background-color: #005dab; }
 
@@ -906,7 +905,7 @@ button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type
   font-weight: 700;
   padding: 0; }
 
-.button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
+.button-square {
   padding: 8px 16px; }
 
 .icon {
@@ -937,10 +936,22 @@ h4 {
   padding-left: 16px; }
 
 #masthead {
-  position: relative;
+  position: fixed;
   display: flex;
-  align-items: center;
-  padding: 16px 16px 0; }
+  vertical-align: middle;
+  padding: 16px 16px 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 250ms; }
+  #masthead.scrolled {
+    background-color: #005dab; }
+  #masthead a {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 4px 4px 12px #000000; }
+  #masthead .site-branding {
+    display: inline-block;
+    max-width: 144px; }
   #masthead .main-navigation {
     display: inline-block;
     vertical-align: middle;
@@ -968,6 +979,9 @@ h4 {
           z-index: auto;
           float: none;
           box-shadow: none; } }
+      #masthead .main-navigation #primary-menu .menu-item-type-custom {
+        padding: 8px 16px;
+        border: 1px solid #ffffff; }
 
 footer {
   display: flex;

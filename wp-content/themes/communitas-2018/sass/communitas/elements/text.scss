@@ -15,6 +15,6 @@ $paragraph: 16px;
 h4 {
   @extend %title;
   display: inline-block;
-  border-left: 8px solid $yellow;
+  border-left: 8px solid $accent;
   padding-left: $padding-md;
 }
