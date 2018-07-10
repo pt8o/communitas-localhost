@@ -2,15 +2,10 @@
   position: fixed;
   display: flex;
   vertical-align: middle;
-  padding: $padding-md $padding-md 0;
+  padding: $padding-md;
   width: 100%;
   z-index: 100;
-
-  transition: background-color $transition;
-
-  &.scrolled {
-    background-color: $blue;
-  }
+  transition: background-color $transition, padding $transition;
 
   a {
     color: $white;
@@ -21,7 +16,19 @@
   // LOGO
   .site-branding {
     display: inline-block;
-    max-width: 144px;
+    height: $menu-height-full;
+    width: auto;
+    transition: height $transition;
+
+    a {
+      height: 100%;
+      width: auto;
+
+      img {
+        max-height: 100%;
+        width: auto;
+      }
+    }
   }
 
   // TOP MENU
@@ -30,6 +37,8 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: auto;
+    margin-top: $padding-md;
+    transition: margin-top $transition;
 
     // The menu options themselves
     #primary-menu {
@@ -71,10 +80,41 @@
       }
 
       // Donate button
-      .menu-item-type-custom {
+      .menu-item-type-custom a {
         padding: $padding-sm $padding-md;
         border: 1px solid $white;
+
+        &:hover {
+          text-decoration: none;
+          background-color: $white;
+          color: $blue;
+        }
       }
+    }
+  }
+
+  // AFTER SCROLLED
+  &.scrolled {
+    background-color: $blue;
+    padding: $padding-sm $padding-md;
+
+    .site-branding {
+      height: $menu-height-reduced;
+      width: auto;
+  
+      a {
+        height: 100%;
+        width: auto;
+  
+        img {
+          max-height: 100%;
+          width: auto;
+        }
+      }
+    }
+
+    .main-navigation {
+      margin-top: $padding-sm;
     }
   }
 }

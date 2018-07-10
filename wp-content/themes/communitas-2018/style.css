@@ -939,23 +939,31 @@ h4 {
   position: fixed;
   display: flex;
   vertical-align: middle;
-  padding: 16px 16px 0;
+  padding: 16px;
   width: 100%;
   z-index: 100;
-  transition: background-color 250ms; }
-  #masthead.scrolled {
-    background-color: #005dab; }
+  transition: background-color 250ms, padding 250ms; }
   #masthead a {
     color: #ffffff;
     font-weight: 600;
     text-shadow: 4px 4px 12px #000000; }
   #masthead .site-branding {
     display: inline-block;
-    max-width: 144px; }
+    height: 112px;
+    width: auto;
+    transition: height 250ms; }
+    #masthead .site-branding a {
+      height: 100%;
+      width: auto; }
+      #masthead .site-branding a img {
+        max-height: 100%;
+        width: auto; }
   #masthead .main-navigation {
     display: inline-block;
     vertical-align: middle;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-top: 16px;
+    transition: margin-top 250ms; }
     #masthead .main-navigation #primary-menu {
       position: relative; }
       @media screen and (max-width: 768px) {
@@ -979,9 +987,27 @@ h4 {
           z-index: auto;
           float: none;
           box-shadow: none; } }
-      #masthead .main-navigation #primary-menu .menu-item-type-custom {
+      #masthead .main-navigation #primary-menu .menu-item-type-custom a {
         padding: 8px 16px;
         border: 1px solid #ffffff; }
+        #masthead .main-navigation #primary-menu .menu-item-type-custom a:hover {
+          text-decoration: none;
+          background-color: #ffffff;
+          color: #005dab; }
+  #masthead.scrolled {
+    background-color: #005dab;
+    padding: 8px 16px; }
+    #masthead.scrolled .site-branding {
+      height: 56px;
+      width: auto; }
+      #masthead.scrolled .site-branding a {
+        height: 100%;
+        width: auto; }
+        #masthead.scrolled .site-branding a img {
+          max-height: 100%;
+          width: auto; }
+    #masthead.scrolled .main-navigation {
+      margin-top: 8px; }
 
 footer {
   display: flex;
