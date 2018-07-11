@@ -18,3 +18,8 @@ h4 {
   border-left: 8px solid $accent;
   padding-left: $padding-md;
 }
+
+// Text effects
+@mixin text-shadow() {
+  text-shadow: 4px 4px 12px $black;
+}

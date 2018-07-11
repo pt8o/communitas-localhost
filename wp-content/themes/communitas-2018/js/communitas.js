@@ -20,7 +20,6 @@
             $('#masthead').addClass('scrolled');
             scrolledDown = true;
         }
-
     });
 
     // FRONT PAGE

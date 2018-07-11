@@ -1,14 +1,15 @@
 button, %button, input[type="button"] {
   color: $white;
-  background-color: $blue;
-  border: 1px solid;
+  background-color: transparent;
   border-radius: 0;
+  border: 0;
   padding: $padding-sm $padding-md;
+  font-weight: 600;
 
   &:hover, &:focus {
     color: $blue;
     background-color: $white;
-    border: 1px solid;
+    // border: 1px solid;
   }
 
   &[disabled], &.disabled {
@@ -23,26 +24,29 @@ button, %button, input[type="button"] {
   }
 
   &.inverted {
-    color: $blue;
-    background-color: $white;
+    color: $white;
+    background-color: transparent;
 
     &:hover, &:focus {
-      color: $white;
-      background-color: $blue;
+      color: $blue;
+      background-color: $white;
     }
   }
 }
 
 %button-round, .button-round {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
   text-align: center;
   font-weight: 700;
   padding: 0;
+  background-color: $blue;
 }
 
 .button-square, %button-square {
   @extend %button;
   padding: $padding-sm $padding-md;
+  background-color: $blue;
+  border: 1px solid;
 }

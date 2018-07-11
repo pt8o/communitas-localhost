@@ -29,8 +29,11 @@ get_header();
 
               else:
                 $vimeo_id = get_sub_field('vimeo_id');
+                $thumbnail_url = get_sub_field('image_preview');
                 ?>
-                  <div style="position:relative;width:100%;height:100%;">
+                  <div class="image" style="background-image:url('<?php echo $image_url ?>')"></div>
+                  <div class="video-overlay"></div>
+                  <div class="video-container">
                     <iframe
                       src="https://player.vimeo.com/video/<?php echo $vimeo_id ?>?title=0&byline=0&portrait=0"
                       style="position:absolute;top:0;left:0;width:100%;height:100%;"

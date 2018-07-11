@@ -820,7 +820,7 @@ object {
   COMMUNITAS ADDITIONS
 ***************************************************************/
 *::selection, *::-moz-selection {
-  background-color: #fff530; }
+  background-color: #ff9752; }
 
 .responsive {
   vertical-align: top;
@@ -873,41 +873,6 @@ a.custom-logo-link:hover {
 a.custom-logo-link:focus {
   border: 1px dotted; }
 
-button, .button-square, input[type="button"] {
-  color: #ffffff;
-  background-color: #005dab;
-  border: 1px solid;
-  border-radius: 0;
-  padding: 8px 16px; }
-  button:hover, button:focus, .button-square:hover, .button-square:focus, input[type="button"]:hover, input[type="button"]:focus {
-    color: #005dab;
-    background-color: #ffffff;
-    border: 1px solid; }
-  button[disabled], button.disabled, [disabled].button-square, .disabled.button-square, input[type="button"][disabled], input[type="button"].disabled {
-    opacity: 0.5;
-    color: #ffffff;
-    background-color: #000000; }
-    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, [disabled].button-square:focus, .disabled.button-square:hover, .disabled.button-square:focus, input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="button"].disabled:hover, input[type="button"].disabled:focus {
-      color: #ffffff;
-      background-color: #000000; }
-  button.inverted, .inverted.button-square, input[type="button"].inverted {
-    color: #005dab;
-    background-color: #ffffff; }
-    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, .inverted.button-square:focus, input[type="button"].inverted:hover, input[type="button"].inverted:focus {
-      color: #ffffff;
-      background-color: #005dab; }
-
-.slideshow .slideshow-control, .button-round {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  text-align: center;
-  font-weight: 700;
-  padding: 0; }
-
-.button-square {
-  padding: 8px 16px; }
-
 .icon {
   width: 24px;
   height: 24px; }
@@ -932,24 +897,61 @@ h4, .title {
 
 h4 {
   display: inline-block;
-  border-left: 8px solid #fff530;
+  border-left: 8px solid #ff9752;
   padding-left: 16px; }
+
+button, .button-square, input[type="button"] {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  padding: 8px 16px;
+  font-weight: 600; }
+  button:hover, button:focus, .button-square:hover, .button-square:focus, input[type="button"]:hover, input[type="button"]:focus {
+    color: #005dab;
+    background-color: #ffffff; }
+  button[disabled], button.disabled, [disabled].button-square, .disabled.button-square, input[type="button"][disabled], input[type="button"].disabled {
+    opacity: 0.5;
+    color: #ffffff;
+    background-color: #000000; }
+    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, [disabled].button-square:focus, .disabled.button-square:hover, .disabled.button-square:focus, input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="button"].disabled:hover, input[type="button"].disabled:focus {
+      color: #ffffff;
+      background-color: #000000; }
+  button.inverted, .inverted.button-square, input[type="button"].inverted {
+    color: #ffffff;
+    background-color: transparent; }
+    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, .inverted.button-square:focus, input[type="button"].inverted:hover, input[type="button"].inverted:focus {
+      color: #005dab;
+      background-color: #ffffff; }
+
+.slideshow .slideshow-control, .button-round {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  background-color: #005dab; }
+
+.button-square {
+  padding: 8px 16px;
+  background-color: #005dab;
+  border: 1px solid; }
 
 #masthead {
   position: fixed;
-  display: flex;
   vertical-align: middle;
   padding: 16px;
   width: 100%;
-  z-index: 100;
+  z-index: 90;
   transition: background-color 250ms, padding 250ms; }
   #masthead a {
     color: #ffffff;
     font-weight: 600;
-    text-shadow: 4px 4px 12px #000000; }
+    text-shadow: 4px 4px 10px #000000; }
   #masthead .site-branding {
     display: inline-block;
-    height: 112px;
+    height: 100px;
     width: auto;
     transition: height 250ms; }
     #masthead .site-branding a {
@@ -960,6 +962,7 @@ h4 {
         width: auto; }
   #masthead .main-navigation {
     display: inline-block;
+    float: right;
     vertical-align: middle;
     margin-left: auto;
     margin-top: 16px;
@@ -997,12 +1000,15 @@ h4 {
   #masthead.scrolled {
     background-color: #005dab;
     padding: 8px 16px; }
+    #masthead.scrolled a {
+      text-shadow: none; }
     #masthead.scrolled .site-branding {
       height: 56px;
       width: auto; }
       #masthead.scrolled .site-branding a {
         height: 100%;
-        width: auto; }
+        width: auto;
+        text-shadow: initial; }
         #masthead.scrolled .site-branding a img {
           max-height: 100%;
           width: auto; }
@@ -1076,7 +1082,8 @@ footer {
     text-align: center; }
     .slideshow #slideshow-index .slideshow-index {
       width: 16px;
-      height: 16px; }
+      height: 16px;
+      margin: 0 4px; }
       .slideshow #slideshow-index .slideshow-index:first-of-type, .slideshow #slideshow-index .slideshow-index:last-of-type {
         margin: 0; }
 

@@ -1,16 +1,15 @@
 #masthead {
   position: fixed;
-  display: flex;
   vertical-align: middle;
   padding: $padding-md;
   width: 100%;
-  z-index: 100;
+  z-index: 90;
   transition: background-color $transition, padding $transition;
 
   a {
     color: $white;
     font-weight: 600;
-    text-shadow: 4px 4px 12px $black;
+    text-shadow: 4px 4px 10px $black;
   }
 
   // LOGO
@@ -35,6 +34,7 @@
   // collapses on mobile
   .main-navigation {
     display: inline-block;
+    float: right;
     vertical-align: middle;
     margin-left: auto;
     margin-top: $padding-md;
@@ -98,6 +98,10 @@
     background-color: $blue;
     padding: $padding-sm $padding-md;
 
+    a {
+      text-shadow: none;
+    }
+
     .site-branding {
       height: $menu-height-reduced;
       width: auto;
@@ -105,6 +109,7 @@
       a {
         height: 100%;
         width: auto;
+        text-shadow: initial;
   
         img {
           max-height: 100%;
