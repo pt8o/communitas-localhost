@@ -12,13 +12,6 @@
     transition: left 600ms, right 600ms;
     background-color: $black;
 
-    .image {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-
     &.left {
       left: -100%;
     }
@@ -29,6 +22,63 @@
 
     &.active {
       left: 0;
+    }
+
+    // Just image
+    .image {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    // Video in a popup
+    // Image preview (`video_thumbnail`) behaves the same as image entry
+    .video-thumbnail {
+      position: relative;
+
+      button {
+        @include box-shadow;
+        @include text-shadow;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -40px;
+        margin-left: -40px;
+        border: 4px solid $white;
+      }
+    }
+
+    .video-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity $transition, z-index $transition linear $transition;
+      
+      &.show {
+        opacity: 1;
+        z-index: 100;
+        transition: opacity $transition;
+      }
+
+      .video-overlay {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: $black;
+        opacity: $opacity;
+
+        button {
+          position: absolute;
+          top: $padding-md;
+          right: $padding-md;
+          font-size: $attention;
+        }
+      }
     }
   }
 
@@ -47,10 +97,17 @@
   }
 
   .slideshow-control {
-    @extend %button-round;
+    @include text-shadow;
     position: absolute;
     top: 50%;
     margin-top: -24px;
+    width: 48px;
+    height: 48px;
+    font-size: $headline;
+
+    &:hover, &:focus {
+
+    }
 
     &#slide-left {
       left: $padding-md;

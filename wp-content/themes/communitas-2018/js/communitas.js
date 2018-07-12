@@ -71,4 +71,17 @@
             runSlideshow();
         }
     });
+
+    // Video controls
+    $('.video-thumbnail button').each(function() {
+        $(this).on('click tap', function() {
+            $(this).parent().next('.video-container').addClass('show');
+        });
+    });
+
+    $('.video-overlay, .video-overlay .close').each(function() {
+        $(this).on('click tap', function() {
+            $('.video-container').removeClass('show');
+        });
+    });
 } )( jQuery );

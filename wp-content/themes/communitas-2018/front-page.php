@@ -29,14 +29,18 @@ get_header();
 
               else:
                 $vimeo_id = get_sub_field('vimeo_id');
-                $thumbnail_url = get_sub_field('image_preview');
+                $video_thumbnail = get_sub_field('video_thumbnail');
                 ?>
-                  <div class="image" style="background-image:url('<?php echo $image_url ?>')"></div>
-                  <div class="video-overlay"></div>
+                  <div class="image video-thumbnail" style="background-image:url('<?php echo $video_thumbnail ?>')">
+                    <button class="button-round large inverted">&#9658;</button>
+                  </div>
                   <div class="video-container">
+                    <div class="video-overlay">
+                      <button class="close no-hover">&#10006;</button>
+                    </div>
                     <iframe
                       src="https://player.vimeo.com/video/<?php echo $vimeo_id ?>?title=0&byline=0&portrait=0"
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      style="position:absolute;top:10%;left:10%;width:80%;height:80%;border-radius:8px;"
                       frameborder="0"
                       webkitallowfullscreen mozallowfullscreen allowfullscreen
                     ></iframe>
@@ -61,8 +65,8 @@ get_header();
             endwhile;
           endif;
     		?>
-        <button id="slide-left" class="slideshow-control">&lt;</button>
-        <button id="slide-right" class="slideshow-control">&gt;</button>
+        <button id="slide-left" class="slideshow-control">&#9666;</button>
+        <button id="slide-right" class="slideshow-control">&#9656;</button>
         <div id="slideshow-index">
           <?php
             if (have_rows('slideshow_content')):

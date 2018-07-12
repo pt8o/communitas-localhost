@@ -8,7 +8,6 @@ button, %button, input[type="button"] {
 
   &:hover, &:focus {
     color: $blue;
-    background-color: $white;
     // border: 1px solid;
   }
 
@@ -32,16 +31,31 @@ button, %button, input[type="button"] {
       background-color: $white;
     }
   }
+
+  &.no-hover, &%no-hover {
+    &:hover, &:focus {
+      color: $white;
+      background-color: transparent;
+    }
+  }
 }
 
 %button-round, .button-round {
   width: 24px;
   height: 24px;
-  border-radius: 12px;
+  border-radius: 100%;
   text-align: center;
   font-weight: 700;
   padding: 0;
   background-color: $blue;
+  font-size: $headline;
+  vertical-align: middle;
+  padding: 0 0 5px 5px;
+
+  &.large, &%large {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .button-square, %button-square {
