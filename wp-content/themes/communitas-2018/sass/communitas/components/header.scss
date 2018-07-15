@@ -65,6 +65,22 @@
 
       // Submenus
       .menu-item-has-children {
+        .sub-menu {
+          background-color: $white;
+
+          .menu-item {
+            margin: 0;
+            padding: $padding-sm $padding-md;
+
+            a {
+              display: inline-block;
+              color: $blue;
+              width: auto;
+              text-shadow: none;
+            }
+          }
+        }
+
         .children {
           @media screen and (max-width: $break-tablet) {
             position: relative;
