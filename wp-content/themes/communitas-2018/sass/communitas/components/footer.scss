@@ -1,26 +1,29 @@
 footer {
+  position: relative;
   display: flex;
   align-items: center;
   color: $white;
   background-color: $blue;
   padding: $padding-md;
 
-  .custom-logo-link {
-    display: flex;
-    align-items: center;
+  .logo {
+    width: 144px;
+    vertical-align: top;
+  }
+
+  .address {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: $padding-md;
   }
 
   .responsive.contacts-container {
-    margin-left: auto;
-    margin-right: $padding-lg;
-    text-align: center;
+    text-align: right;
+    vertical-align: middle;
 
-    a:not(.button-square) {
+    a {
       margin: 0 $padding-sm;
-    }
-
-    .button-square {
-      margin-top: $padding-sm;
+      vertical-align: middle;
     }
   }
 }

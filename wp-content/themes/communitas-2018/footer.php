@@ -29,28 +29,22 @@
 		<!-- </div> -->
     <!-- .site-info -->
 
-    <div class="responsive quarter site-branding">
-  		<img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_inverted.jpg' ) ); ?>" alt="Communitas logo" />
-    </div>
-
-    <div class="responsive quarter address paragraph">
-      3974 Notre Dame Street West, Suite B<br/>
-      Montreal, QC H4C 1R1<br/>
-      +1 514 244 6147<br/>
-      info@communitasmontreal.org
-    </div>
-
-    <div class="responsive quarter"></div>
-    <div class="responsive contacts-container">
+    <div class="responsive half site-branding">
+      <img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_inverted.jpg' ) ); ?>" alt="Communitas logo" />
+      <div class="address">
+        3974 Notre Dame Street West, Suite B<br/>
+        Montreal, QC H4C 1R1<br/>
+        +1 514 244 6147<br/>
+        info@communitasmontreal.org
+      </div>
+    </div><div class="responsive half contacts-container">
       <a class="responsive" href="mailto:info@communitasmontreal.org">
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-mail.png' ) ); ?>" alt="Email"/>
       </a><a class="responsive" href="https://twitter.com/Communitas_MTL">
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-twitter.png' ) ); ?>" alt="Twitter"/>
       </a><a class="responsive" href="https://www.facebook.com/communitasmontreal/">
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-facebook.png' ) ); ?>" alt="Facebook"/>
-      </a><br/>
-
-      <a class="button-square inverted" href="http://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d10867">
+      </a><a class="button-square inverted" href="http://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d10867">
         Donate
       </a>
     </div>
