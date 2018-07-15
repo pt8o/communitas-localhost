@@ -1,9 +1,13 @@
 .slideshow {
   position: relative;
   width: 100%;
-  height: 66vw;
-  max-height: 600px;
+  height: 80vh;
+  min-height: 600px;
   overflow: hidden;
+
+  @media all and (max-width: $break-tablet) {
+    min-height: 480px;
+  }
 
   .entry {
     position: absolute;
