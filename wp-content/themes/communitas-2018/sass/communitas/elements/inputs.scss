@@ -7,9 +7,11 @@ form {
     border: 0;
     border-radius: 0;
     border-bottom: 1px solid $blue;
+    width: 100%;
   }
 
   button {
     margin-left: $padding-sm;
+    min-width: 120px;
   }
 }

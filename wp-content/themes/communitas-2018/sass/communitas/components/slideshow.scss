@@ -34,6 +34,8 @@
       height: 100%;
       background-size: cover;
       background-position: center;
+      // filter: grayscale(50%);
+      // -webkit-filter: grayscale(50%);
     }
 
     // Video in a popup
@@ -82,7 +84,7 @@
         background-color: $black;
         opacity: $opacity;
 
-        button {
+        .close {
           position: absolute;
           top: $padding-md;
           right: $padding-md;

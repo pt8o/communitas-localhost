@@ -2,7 +2,7 @@
 $attention: 48px;
 $headline: 36px;
 $title: 24px;
-$paragraph: 16px;
+$paragraph: 18px;
 
 // Weights
 $regular: 400;
@@ -15,14 +15,14 @@ $bold: 900;
 
 %title, .title {
   font-size: $title;
-  font-weight: $semibold;
+  font-weight: $bold;
+  line-height: 1em;
+  text-transform: uppercase;
 }
 
 h4 {
   @extend %title;
   display: inline-block;
-  border-left: 8px solid $accent;
-  padding-left: $padding-md;
 }
 
 // Text effects

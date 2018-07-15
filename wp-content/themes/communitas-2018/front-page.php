@@ -32,11 +32,11 @@ get_header();
                 $video_thumbnail = get_sub_field('video_thumbnail');
                 ?>
                   <div class="image video-thumbnail" style="background-image:url('<?php echo $video_thumbnail ?>')">
-                    <button class="video-play button-round large transparent">&#9658;</button>
+                    <button class="video-play button-round large">&#9658;</button>
                   </div>
                   <div class="video-container">
                     <div class="video-overlay">
-                      <button class="close no-hover">&#10006;</button>
+                      <button class="close transparent">&#10006;</button>
                     </div>
                     <iframe
                       src="https://player.vimeo.com/video/<?php echo $vimeo_id ?>?title=0&byline=0&portrait=0"
@@ -65,8 +65,8 @@ get_header();
             endwhile;
           endif;
         ?>
-        <button id="slide-left" class="slideshow-control">&larr;</button>
-        <button id="slide-right" class="slideshow-control">&rarr;</button>
+        <button id="slide-left" class="slideshow-control transparent">&larr;</button>
+        <button id="slide-right" class="slideshow-control transparent">&rarr;</button>
 
         <!-- <div id="slideshow-index">
           <?php
@@ -86,30 +86,29 @@ get_header();
 
       <section id="about-communitas">
         <p class="hook"><?php the_field('about_communitas'); ?></p>
-      </section>
-
-      <section id="why-how">
-        <div class="card responsive third">
-          <?php $why_it_matters = get_field('why_it_matters'); ?>
-          <h4><?php echo $why_it_matters['title']; ?></h4>
-          <p><?php echo $why_it_matters['text']; ?></p>
-        </div><div class="card responsive third">
-          <?php $how_we_work = get_field('how_we_work'); ?>
-          <h4><?php echo $how_we_work['title']; ?></h4>
-          <p><?php echo $how_we_work['text']; ?></p>
-        </div><div class="card responsive third">
-          <?php $how_contribute = get_field('how_contribute'); ?>
-          <h4><?php echo $how_contribute['title']; ?></h4>
-          <p><?php echo $how_contribute['text']; ?></p>
+        <div class="card-container">
+          <a href="#" class="card responsive third">
+            <?php $why_it_matters = get_field('why_it_matters'); ?>
+            <h4><?php echo $why_it_matters['title']; ?></h4>
+            <p><?php echo $why_it_matters['text']; ?></p>
+          </a><a href="#" class="card responsive third">
+            <?php $how_we_work = get_field('how_we_work'); ?>
+            <h4><?php echo $how_we_work['title']; ?></h4>
+            <p><?php echo $how_we_work['text']; ?></p>
+          </a><a href="#" class="card responsive third">
+            <?php $how_contribute = get_field('how_contribute'); ?>
+            <h4><?php echo $how_contribute['title']; ?></h4>
+            <p><?php echo $how_contribute['text']; ?></p>
+          </a>
         </div>
       </section>
 
-      <section>
+      <section id="impact-news">
         <div class="card responsive half">
           <?php $our_impact = get_field('our_impact'); ?>
           <h4><?php echo $our_impact['title']?></h4>
           <p><?php echo $our_impact['text']?></p>
-        </div><div class="card responsive half">
+        </div><div class="news card responsive half">
           <?php $hear_the_latest = get_field('hear_the_latest'); ?>
           <h4><?php echo $hear_the_latest['title']?></h4>
           <p><?php echo $hear_the_latest['text']?></p>

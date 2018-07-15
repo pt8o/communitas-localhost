@@ -6,29 +6,30 @@ $menu-height-reduced: 56px;
   display: inline-block;
 
   &.half {
-    width: calc(49.9% - #{$padding-sm});
+    width: 50%;
   }
 
   &.third {
-    width: calc(33.3% - #{$padding-sm});
-    margin-left: $padding-xs;
-    margin-right: $padding-xs;
+    width: 33.3%;
+    &:last-of-type {
+      width: 33.4%;
+    }
   }
 
   &.quarter {
-    width: calc(25% - #{$padding-sm});
+    width: 25%;
     margin-left: $padding-xs;
     margin-right: $padding-xs;
   }
 
   &:first-of-type {
-    margin-left: 0;
-    margin-right: $padding-sm;
+    // margin-left: 0;
+    // margin-right: $padding-sm;
   }
 
   &:last-of-type {
-    margin-left: $padding-sm;
-    margin-right: 0;
+    // margin-left: $padding-sm;
+    // margin-right: 0;
   }
 
   // @media all and (max-width: $tablet) {
@@ -50,10 +51,15 @@ section {
 }
 
 .card {
-  padding: $padding-md;
-  text-align: center;
-  
-  form {
-    display: inline-block;
+  display: inline-block;
+  padding: $padding-lg;
+  color: inherit;
+}
+a.card {
+  color: inherit;
+
+  &:hover, &:focus {
+    color: inherit;
+    border: 0;
   }
 }
