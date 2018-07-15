@@ -30,7 +30,7 @@
     <!-- .site-info -->
 
     <div class="responsive half site-branding">
-      <img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_inverted.jpg' ) ); ?>" alt="Communitas logo" />
+      <img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_white.png' ) ); ?>" alt="Communitas logo" />
       <div class="address">
         3974 Notre Dame Street West, Suite B<br/>
         Montreal, QC H4C 1R1<br/>
