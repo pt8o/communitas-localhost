@@ -4,13 +4,18 @@ $headline: 36px;
 $title: 24px;
 $paragraph: 16px;
 
+// Weights
+$regular: 400;
+$semibold: 600;
+$bold: 900;
+
 %headline, .headline {
   font-size: $headline;
 }
 
 %title, .title {
   font-size: $title;
-  font-weight: 600;
+  font-weight: $semibold;
 }
 
 h4 {

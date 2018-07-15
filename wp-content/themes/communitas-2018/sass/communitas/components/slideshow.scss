@@ -41,15 +41,21 @@
     .video-thumbnail {
       position: relative;
 
-      button {
+      .video-play {
         @include box-shadow;
         @include text-shadow;
         position: absolute;
         left: 50%;
         top: 50%;
-        margin-top: -40px;
-        margin-left: -40px;
+        margin-top: -28px;
+        margin-left: -28px;
         border: 4px solid $white;
+
+        &:hover {
+          background-color: $white;
+          color: $blue;
+          text-shadow: none;
+        }
       }
     }
 
@@ -80,31 +86,31 @@
           position: absolute;
           top: $padding-md;
           right: $padding-md;
-          font-size: $attention;
+          font-size: $headline;
         }
       }
     }
   }
 
   .caption {
+    @include text-shadow;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 48px;
-
-    padding: $padding-sm 25% $padding-sm $padding-md;
-    background-color: $overlay;
+    left: $padding-lg;
+    bottom: 10%;
+    width: 50%;
+    padding-right: 72px;
     color: $white;
+    font-size: $headline;
+    font-weight: $bold;
+    line-height: 1.2em;
   }
 
   .slideshow-control {
     @include text-shadow;
     position: absolute;
-    top: 50%;
-    margin-top: -24px;
+    bottom: $padding-md;
     width: 48px;
     height: 48px;
     font-size: $headline;
@@ -124,9 +130,10 @@
 
   #slideshow-index {
     position: absolute;
-    right: $padding-md;
+    left: 50%;
     bottom: $padding-md;
     text-align: center;
+    height: 48px;
 
     .slideshow-index {
       width: 16px;

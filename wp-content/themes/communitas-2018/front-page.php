@@ -32,7 +32,7 @@ get_header();
                 $video_thumbnail = get_sub_field('video_thumbnail');
                 ?>
                   <div class="image video-thumbnail" style="background-image:url('<?php echo $video_thumbnail ?>')">
-                    <button class="button-round large inverted">&#9658;</button>
+                    <button class="video-play button-round large transparent">&#9658;</button>
                   </div>
                   <div class="video-container">
                     <div class="video-overlay">
@@ -64,10 +64,11 @@ get_header();
 
             endwhile;
           endif;
-    		?>
-        <button id="slide-left" class="slideshow-control">&#9666;</button>
-        <button id="slide-right" class="slideshow-control">&#9656;</button>
-        <div id="slideshow-index">
+        ?>
+        <button id="slide-left" class="slideshow-control">&larr;</button>
+        <button id="slide-right" class="slideshow-control">&rarr;</button>
+
+        <!-- <div id="slideshow-index">
           <?php
             if (have_rows('slideshow_content')):
               while (have_rows('slideshow_content')) : the_row();
@@ -80,7 +81,7 @@ get_header();
               endwhile;
             endif;
           ?>
-        </div>
+        </div> -->
       </div>
 
       <section id="about-communitas">

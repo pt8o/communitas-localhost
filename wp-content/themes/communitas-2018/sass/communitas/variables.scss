@@ -19,7 +19,7 @@ $accent: #ff9752;
 
 // Effects
 $transition: 250ms;
-$shadow: 0 0 8px $black;
+$shadow: 2px 2px 2px $black;
 $opacity: 0.9;
 
 @mixin box-shadow() {
