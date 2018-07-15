@@ -822,6 +822,12 @@ object {
 *::selection, *::-moz-selection {
   background-color: #ff527d; }
 
+.hidden {
+  opacity: 0; }
+
+.removed {
+  display: none; }
+
 .responsive {
   vertical-align: top;
   display: inline-block; }
@@ -1084,7 +1090,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: left 600ms, right 600ms;
+    transition: left 600ms;
     background-color: #000000; }
     .slideshow .entry.left {
       left: -100%; }
@@ -1153,7 +1159,8 @@ footer {
     bottom: 16px;
     width: 48px;
     height: 48px;
-    font-size: 36px; }
+    font-size: 36px;
+    transition: opacity 250ms; }
     .slideshow .slideshow-control#slide-left {
       left: 16px; }
     .slideshow .slideshow-control#slide-right {

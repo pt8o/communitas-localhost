@@ -1,6 +1,14 @@
 $menu-height-full: 100px;
 $menu-height-reduced: 56px;
 
+.hidden {
+  opacity: 0;
+}
+
+.removed {
+  display: none;
+}
+
 .responsive {
   vertical-align: top;
   display: inline-block;

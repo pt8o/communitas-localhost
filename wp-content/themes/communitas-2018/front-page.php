@@ -65,7 +65,7 @@ get_header();
             endwhile;
           endif;
         ?>
-        <button id="slide-left" class="slideshow-control transparent">&larr;</button>
+        <button id="slide-left" class="slideshow-control transparent hidden">&larr;</button>
         <button id="slide-right" class="slideshow-control transparent">&rarr;</button>
 
         <!-- <div id="slideshow-index">

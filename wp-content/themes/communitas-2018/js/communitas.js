@@ -59,6 +59,14 @@
         if (current != temp) {
             runSlideshow();
         }
+
+        if (current === 0) {
+            $('#slide-left').addClass('hidden');
+        } else if (current === max) {
+            $('#slide-right').addClass('hidden');
+        } else {
+            $('.slideshow-control.hidden').removeClass('hidden');
+        }
     });
 
     $('.slideshow-index').on('click tap', function() {
