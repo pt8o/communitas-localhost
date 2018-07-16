@@ -12,6 +12,7 @@
   .card {
     position: relative;
     text-align: center;
+    border: 0;
 
     * {
       z-index: 1;
@@ -84,7 +85,7 @@
       font-size: $attention;
       text-align: center;
       margin: $padding-lg 0;
-      padding: $padding-lg;
+      padding: $padding-xl;
       font-weight: $semibold;
       line-height: 1.2em;
     }

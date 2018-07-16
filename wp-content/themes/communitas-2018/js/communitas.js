@@ -61,11 +61,11 @@
         }
 
         if (current === 0) {
-            $('#slide-left').addClass('hidden');
+            $('#slide-left').addClass('disabled');
         } else if (current === max) {
-            $('#slide-right').addClass('hidden');
+            $('#slide-right').addClass('disabled');
         } else {
-            $('.slideshow-control.hidden').removeClass('hidden');
+            $('.slideshow-control.disabled').removeClass('disabled');
         }
     });
 

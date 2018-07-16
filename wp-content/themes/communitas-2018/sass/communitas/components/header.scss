@@ -97,14 +97,8 @@
 
       // Donate button
       .menu-item-type-custom a {
-        padding: $padding-sm $padding-md;
-        border: 1px solid $white;
-
-        &:hover {
-          text-shadow: none;
-          background-color: $white;
-          color: $blue;
-        }
+        @extend %button-square;
+        @extend %inverted;
       }
     }
   }

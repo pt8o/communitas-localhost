@@ -123,7 +123,12 @@
     }
 
     &#slide-right {
-      right: $padding-md;
+      left: 56px;
+    }
+
+    &.disabled {
+      opacity: 0.3;
+      pointer-events: none;
     }
   }
 
