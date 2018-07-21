@@ -18,6 +18,11 @@
       z-index: 1;
     }
 
+    .card-title {
+      margin-top: $padding-md;
+      text-align: center;
+    }
+
     h4 {
       position: relative;
       padding-bottom: $padding-md;

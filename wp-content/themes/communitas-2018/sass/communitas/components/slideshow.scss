@@ -44,14 +44,11 @@
       position: relative;
 
       .video-play {
-        @include box-shadow;
-        @include text-shadow;
         position: absolute;
         left: 50%;
         top: 50%;
-        margin-top: -28px;
-        margin-left: -28px;
-        border: 4px solid $white;
+        margin-top: -40px;
+        margin-left: -40px;
 
         &:hover {
           // background-color: $white;
@@ -77,19 +74,21 @@
         transition: opacity $transition;
       }
 
+      .close {
+        position: fixed;
+        top: $padding-md;
+        right: $padding-md;
+        font-size: $headline;
+      }
+
       .video-overlay {
         position: relative;
         width: 100vw;
         height: 100vh;
+        top: 0;
+        left: 0;
         background-color: $black;
         opacity: $opacity;
-
-        .close {
-          position: absolute;
-          top: $padding-md;
-          right: $padding-md;
-          font-size: $headline;
-        }
       }
     }
   }
@@ -113,8 +112,6 @@
     @include text-shadow;
     position: absolute;
     bottom: $padding-md;
-    width: 48px;
-    height: 48px;
     font-size: $headline;
     transition: opacity $transition;
 
@@ -123,7 +120,7 @@
     }
 
     &#slide-right {
-      left: 56px;
+      right: $padding-md;
     }
 
     &.disabled {

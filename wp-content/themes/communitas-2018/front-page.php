@@ -32,20 +32,13 @@ get_header();
                 $video_thumbnail = get_sub_field('video_thumbnail');
                 ?>
                   <div class="image video-thumbnail" style="background-image:url('<?php echo $video_thumbnail ?>')">
-                    <button class="video-play button-round large">&#9658;</button>
+                    <button class="video-play button-round large transparent">&#9658;</button>
                   </div>
                   <div class="video-container">
-                    <div class="video-overlay">
-                      <button class="close transparent">&#10006;</button>
-                    </div>
-                    <iframe
-                      src="https://player.vimeo.com/video/<?php echo $vimeo_id ?>?title=0&byline=0&portrait=0"
-                      style="position:absolute;top:10%;left:10%;width:80%;height:80%;border-radius:8px;"
-                      frameborder="0"
-                      webkitallowfullscreen mozallowfullscreen allowfullscreen
-                    ></iframe>
+                    <div class="video-overlay"></div>
+                    <div class="video-content" data-url="<?php echo $vimeo_id ?>"></div>
+                    <button class="close transparent">&#10006;</button>
                   </div>
-                  <script src="https://player.vimeo.com/api/player.js"></script>
                 <?php
               endif;
 
@@ -105,12 +98,18 @@ get_header();
 
       <section id="impact-news">
         <div class="card responsive half">
-          <?php $our_impact = get_field('our_impact'); ?>
-          <h4><?php echo $our_impact['title']?></h4>
+          <div class="card-title">
+            <img class="icon-deco" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-handshake.png' ) ); ?>" alt="Communitas logo" /><br/>
+            <?php $our_impact = get_field('our_impact'); ?>
+            <h4><?php echo $our_impact['title']?></h4>
+          </div>
           <p><?php echo $our_impact['text']?></p>
         </div><div class="news card responsive half">
-          <?php $hear_the_latest = get_field('hear_the_latest'); ?>
-          <h4><?php echo $hear_the_latest['title']?></h4>
+          <div class="card-title">
+            <img class="icon-deco" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-broadcast.png' ) ); ?>" alt="Communitas logo" /><br/>
+            <?php $hear_the_latest = get_field('hear_the_latest'); ?>
+            <h4><?php echo $hear_the_latest['title']?></h4>
+          </div>
           <p><?php echo $hear_the_latest['text']?></p>
 
           <form>

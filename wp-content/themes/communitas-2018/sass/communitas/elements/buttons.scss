@@ -66,8 +66,9 @@ button, %button, input[type="button"] {
   padding: 0 0 5px 5px;
 
   &.large, &%large {
-    width: 56px;
-    height: 56px;
+    width: 80px;
+    height: 80px;
+    font-size: $attention;
   }
 }
 

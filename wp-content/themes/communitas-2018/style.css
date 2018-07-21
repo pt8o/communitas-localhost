@@ -887,6 +887,10 @@ a.custom-logo-link:focus {
   width: 24px;
   height: 24px; }
 
+.icon-deco {
+  width: 80px;
+  height: 80px; }
+
 form {
   font-family: monospace;
   display: flex;
@@ -961,8 +965,9 @@ button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type
   vertical-align: middle;
   padding: 0 0 5px 5px; }
   .button-round.large {
-    width: 56px;
-    height: 56px; }
+    width: 80px;
+    height: 80px;
+    font-size: 48px; }
 
 .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a {
   padding: 8px 16px;
@@ -1100,14 +1105,11 @@ footer {
     .slideshow .entry .video-thumbnail {
       position: relative; }
       .slideshow .entry .video-thumbnail .video-play {
-        box-shadow: 2px 2px 0px #000000;
-        text-shadow: 2px 2px 0px #000000;
         position: absolute;
         left: 50%;
         top: 50%;
-        margin-top: -28px;
-        margin-left: -28px;
-        border: 4px solid #ffffff; }
+        margin-top: -40px;
+        margin-left: -40px; }
         .slideshow .entry .video-thumbnail .video-play:hover {
           border-color: #70a6bd; }
     .slideshow .entry .video-container {
@@ -1123,17 +1125,19 @@ footer {
         opacity: 1;
         z-index: 100;
         transition: opacity 250ms; }
+      .slideshow .entry .video-container .close {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        font-size: 36px; }
       .slideshow .entry .video-container .video-overlay {
         position: relative;
         width: 100vw;
         height: 100vh;
+        top: 0;
+        left: 0;
         background-color: #000000;
         opacity: 0.9; }
-        .slideshow .entry .video-container .video-overlay .close {
-          position: absolute;
-          top: 16px;
-          right: 16px;
-          font-size: 36px; }
   .slideshow .caption {
     text-shadow: 2px 2px 0px #000000;
     display: flex;
@@ -1151,14 +1155,12 @@ footer {
     text-shadow: 2px 2px 0px #000000;
     position: absolute;
     bottom: 16px;
-    width: 48px;
-    height: 48px;
     font-size: 36px;
     transition: opacity 250ms; }
     .slideshow .slideshow-control#slide-left {
       left: 16px; }
     .slideshow .slideshow-control#slide-right {
-      left: 56px; }
+      right: 16px; }
     .slideshow .slideshow-control.disabled {
       opacity: 0.3;
       pointer-events: none; }
@@ -1184,6 +1186,9 @@ footer {
   border: 0; }
   .home .card * {
     z-index: 1; }
+  .home .card .card-title {
+    margin-top: 16px;
+    text-align: center; }
   .home .card h4 {
     position: relative;
     padding-bottom: 16px; }
