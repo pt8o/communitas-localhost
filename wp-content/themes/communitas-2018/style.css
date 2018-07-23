@@ -1249,14 +1249,14 @@ footer {
     .home #impact-news .news form {
       width: 100%; }
 
-.page #main {
+.page:not(.home) #main {
   position: relative; }
-.page .page-headline {
+.page:not(.home) .page-headline {
   position: relative;
   height: 480px;
   background-image: url("./static/home_newsprint.jpg");
   padding: 32px; }
-  .page .page-headline::before {
+  .page:not(.home) .page-headline::before {
     content: ' ';
     position: absolute;
     left: 0;
@@ -1266,33 +1266,33 @@ footer {
     z-index: -0;
     background-color: #000000;
     opacity: 0.8; }
-  .page .page-headline .headline {
+  .page:not(.home) .page-headline .headline {
     position: absolute;
     bottom: 48px;
     left: 32px; }
     @media all and (min-width: 1200px) {
-      .page .page-headline .headline {
+      .page:not(.home) .page-headline .headline {
         left: 50%;
         margin-left: -600px; } }
-    .page .page-headline .headline h2 {
+    .page:not(.home) .page-headline .headline h2 {
       display: inline-block;
       font-size: 48px;
       color: #ffffff;
       padding-bottom: 32px;
       border-bottom: 4px solid #ff527d; }
       @media all and (min-width: 1200px) {
-        .page .page-headline .headline h2 {
+        .page:not(.home) .page-headline .headline h2 {
           margin-left: 32px; } }
-.page section {
+.page:not(.home) section {
   position: relative;
   max-width: 1200px;
   padding: 32px; }
-  .page section h3, .page section h4 {
+  .page:not(.home) section h3, .page:not(.home) section h4 {
     display: inline-block;
     border-bottom: 4px solid #ff527d;
     padding-bottom: 16px; }
   @media all and (min-width: 1200px) {
-    .page section {
+    .page:not(.home) section {
       left: 50%;
       margin-left: -600px; } }
 
