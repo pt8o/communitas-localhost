@@ -28,23 +28,7 @@
       padding-bottom: $padding-md;
 
       // Cool double underline thing
-      &::before, &::after {
-        @include pseudo;
-        top: 100%;
-        left: 50%;
-        height: 2px;
-        background-color: $accent;
-      }
-      &::before {
-        width: 80px;
-        margin-left: -40px;
-        margin-top: $padding-sm;
-      }
-      &::after {
-        margin-top: $padding-md;
-        width: 40px;
-        margin-left: -20px;
-      }
+      @include double-underline;
     }
 
     p {

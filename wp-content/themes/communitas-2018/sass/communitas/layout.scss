@@ -71,3 +71,18 @@ a.card {
     border: 0;
   }
 }
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin max-width() {
+  @media all and (min-width: $break-max) {
+    left: 50%;
+    margin-left: -600px;
+  }
+}
