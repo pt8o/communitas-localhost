@@ -7,18 +7,19 @@
         position: relative;
         height: 480px;
         background-image: url('./static/home_newsprint.jpg');
+        padding: $padding-lg;
 
         &::before {
             @include pseudo;
             @include overlay;
             background-color: $black;
-            opacity: 0.7;
+            opacity: 0.8;
         }
 
         .headline {
             position: absolute;
             bottom: $padding-xl;
-            left: $padding-md;
+            left: $padding-lg;
             @include max-width;
 
             h2 {
@@ -29,7 +30,7 @@
                 border-bottom: 4px solid $accent;
 
                 @media all and (min-width: $break-max) {
-                    margin-left: $padding-md;
+                    margin-left: $padding-lg;
                 }
             }
         }
@@ -38,6 +39,7 @@
     section {
         position: relative;
         max-width: 1200px;
+        padding: $padding-lg;
 
         h3, h4 {
             display: inline-block;
