@@ -57,7 +57,11 @@
         @include max-width();
 
         .subsection {
-            margin-bottom: $padding-md;
+            margin-bottom: $padding-lg;
+
+            p {
+                margin-top: 0;
+            }
         }
     }
 }

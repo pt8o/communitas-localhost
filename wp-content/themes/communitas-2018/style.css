@@ -1297,19 +1297,31 @@ footer {
       left: 50%;
       margin-left: -600px; } }
   .page:not(.home) section .subsection {
-    margin-bottom: 16px; }
+    margin-bottom: 32px; }
+    .page:not(.home) section .subsection p {
+      margin-top: 0; }
 
-body.page-id-7 .person .portrait {
+body.page-id-7 .person {
   display: inline-block;
-  vertical-align: middle;
-  min-width: 60px;
-  width: 60px;
-  min-height: 60px;
-  height: 60px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%; }
-body.page-id-7 .person .name {
+  margin-right: 16px; }
+  body.page-id-7 .person .portrait {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 60px;
+    width: 60px;
+    min-height: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%; }
+body.page-id-7 .partner {
+  display: inline-block;
+  margin-right: 16px; }
+  body.page-id-7 .partner .logo {
+    vertical-align: middle;
+    max-width: 144px;
+    max-height: 120px; }
+body.page-id-7 .name {
   margin-left: 8px;
   vertical-align: middle; }
 

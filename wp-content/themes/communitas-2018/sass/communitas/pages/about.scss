@@ -1,5 +1,8 @@
 body.page-id-7 {
     .person {
+        display: inline-block;
+        margin-right: $padding-md;
+
         .portrait {
             display: inline-block;
             vertical-align: middle;
@@ -14,10 +17,23 @@ body.page-id-7 {
             background-position: center;
             border-radius: 100%;
         }
+    }
 
-        .name {
-            margin-left: $padding-sm;
+    .partner {
+        display: inline-block;
+        margin-right: $padding-md;
+
+        .logo {
             vertical-align: middle;
+            max-width: 144px;
+            max-height: 120px;
         }
+    }
+
+    // shared between persons and partners
+    .name {
+        // font-weight: $semibold;
+        margin-left: $padding-sm;
+        vertical-align: middle;
     }
 }
