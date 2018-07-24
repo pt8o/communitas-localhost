@@ -24,6 +24,8 @@
     }
 
     h4 {
+      @extend %title;
+      display: inline-block;
       position: relative;
       padding-bottom: $padding-md;
 

@@ -908,14 +908,11 @@ form {
 .headline {
   font-size: 36px; }
 
-h4, .title {
+.home .card h4, .title {
   font-size: 24px;
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase; }
-
-h4 {
-  display: inline-block; }
 
 button, .button-square, #masthead .main-navigation #primary-menu .menu-item-type-custom a, input[type="button"] {
   font-family: 'Mada', sans-serif;
@@ -1190,6 +1187,7 @@ footer {
     margin-top: 16px;
     text-align: center; }
   .home .card h4 {
+    display: inline-block;
     position: relative;
     padding-bottom: 16px; }
     .home .card h4::before, .home .card h4::after {
@@ -1268,7 +1266,7 @@ footer {
     opacity: 0.8; }
   .page:not(.home) .page-headline .headline {
     position: absolute;
-    bottom: 48px;
+    bottom: 32px;
     left: 32px; }
     @media all and (min-width: 1200px) {
       .page:not(.home) .page-headline .headline {
@@ -1289,11 +1287,30 @@ footer {
   padding: 32px; }
   .page:not(.home) section h3, .page:not(.home) section h4 {
     display: inline-block;
-    border-bottom: 4px solid #ff527d;
+    border-bottom: 4px solid #ff527d; }
+  .page:not(.home) section h3 {
     padding-bottom: 16px; }
+  .page:not(.home) section h4 {
+    padding-bottom: 8px; }
   @media all and (min-width: 1200px) {
     .page:not(.home) section {
       left: 50%;
       margin-left: -600px; } }
+  .page:not(.home) section .subsection {
+    margin-bottom: 16px; }
+
+body.page-id-7 .person .portrait {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 60px;
+  width: 60px;
+  min-height: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%; }
+body.page-id-7 .person .name {
+  margin-left: 8px;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */

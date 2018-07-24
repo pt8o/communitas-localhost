@@ -18,7 +18,7 @@
 
         .headline {
             position: absolute;
-            bottom: $padding-xl;
+            bottom: $padding-lg;
             left: $padding-lg;
             @include max-width;
 
@@ -44,9 +44,20 @@
         h3, h4 {
             display: inline-block;
             border-bottom: 4px solid $accent;
+        }
+
+        h3 {
             padding-bottom: $padding-md;
         }
 
+        h4 {
+            padding-bottom: $padding-sm;
+        }
+
         @include max-width();
+
+        .subsection {
+            margin-bottom: $padding-md;
+        }
     }
 }

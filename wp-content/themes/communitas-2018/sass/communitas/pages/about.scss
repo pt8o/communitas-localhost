@@ -1,0 +1,23 @@
+body.page-id-7 {
+    .person {
+        .portrait {
+            display: inline-block;
+            vertical-align: middle;
+            
+            $portrait-size: 60px;
+            min-width: $portrait-size;
+            width: $portrait-size;
+            min-height: $portrait-size;
+            height: $portrait-size;
+
+            background-size: cover;
+            background-position: center;
+            border-radius: 100%;
+        }
+
+        .name {
+            margin-left: $padding-sm;
+            vertical-align: middle;
+        }
+    }
+}

@@ -20,11 +20,6 @@ $bold: 900;
   text-transform: uppercase;
 }
 
-h4 {
-  @extend %title;
-  display: inline-block;
-}
-
 // Text effects
 @mixin text-shadow() {
   text-shadow: $shadow;
