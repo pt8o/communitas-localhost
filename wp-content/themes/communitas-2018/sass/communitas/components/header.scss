@@ -96,7 +96,7 @@
       }
 
       // Donate button
-      .menu-item-type-custom a {
+      .menu-item-type-custom:last-of-type a {
         @extend %button-square;
         @extend %inverted;
       }
