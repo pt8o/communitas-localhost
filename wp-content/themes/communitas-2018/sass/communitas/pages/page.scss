@@ -47,11 +47,11 @@
         }
 
         h3 {
-            padding-bottom: $padding-md;
+            padding-bottom: $padding-sm;
         }
 
         h4 {
-            padding-bottom: $padding-sm;
+            padding-bottom: $padding-xs;
         }
 
         @include max-width();

@@ -2,6 +2,7 @@ body.page-id-7 {
     .person {
         display: inline-block;
         margin-right: $padding-xl;
+        margin-bottom: $padding-lg;
 
         .portrait {
             display: inline-block;
@@ -15,13 +16,19 @@ body.page-id-7 {
 
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             border-radius: 100%;
+
+            &.default {
+                background-color: $blue;
+                background-size: 75%;
+            }
         }
     }
 
     .partner {
-        display: inline-block;
-        margin-right: $padding-xl;
+        display: block;
+        margin: $padding-md 0 $padding-lg;
 
         .logo {
             vertical-align: middle;

@@ -1289,9 +1289,9 @@ footer {
     display: inline-block;
     border-bottom: 4px solid #ff527d; }
   .page:not(.home) section h3 {
-    padding-bottom: 16px; }
-  .page:not(.home) section h4 {
     padding-bottom: 8px; }
+  .page:not(.home) section h4 {
+    padding-bottom: 4px; }
   @media all and (min-width: 1200px) {
     .page:not(.home) section {
       left: 50%;
@@ -1303,7 +1303,8 @@ footer {
 
 body.page-id-7 .person {
   display: inline-block;
-  margin-right: 48px; }
+  margin-right: 48px;
+  margin-bottom: 32px; }
   body.page-id-7 .person .portrait {
     display: inline-block;
     vertical-align: middle;
@@ -1313,10 +1314,14 @@ body.page-id-7 .person {
     height: 60px;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 100%; }
+    body.page-id-7 .person .portrait.default {
+      background-color: #005dab;
+      background-size: 75%; }
 body.page-id-7 .partner {
-  display: inline-block;
-  margin-right: 48px; }
+  display: block;
+  margin: 16px 0 32px; }
   body.page-id-7 .partner .logo {
     vertical-align: middle;
     max-width: 144px;

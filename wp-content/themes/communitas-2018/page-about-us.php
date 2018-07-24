@@ -40,13 +40,17 @@ get_header();
                         <h4><?php echo $staff['title']; ?></h4><br/>
                         <?php foreach($staff['staff_members'] as $val) { ?>
                             <div class="person">
-                                <span
-                                    class="portrait"
+                            <span
+                                    class="portrait<?php
+                                        if (!$val['image']) {
+                                            echo ' default';
+                                        }
+                                    ?>"
                                     style="background-image:url('<?php
                                         if ($val['image']) {
                                             echo $val['image'];
                                         } else {
-                                            echo 'default';
+                                            echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_white_notext.png' ) );
                                         }
                                     ?>');"
                                 ></span>
@@ -62,12 +66,16 @@ get_header();
                         <?php foreach($board['board_members'] as $val) { ?>
                             <div class="person">
                                 <span
-                                    class="portrait"
+                                    class="portrait<?php
+                                        if (!$val['image']) {
+                                            echo ' default';
+                                        }
+                                    ?>"
                                     style="background-image:url('<?php
                                         if ($val['image']) {
                                             echo $val['image'];
                                         } else {
-                                            echo 'default';
+                                            echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_white_notext.png' ) );
                                         }
                                     ?>');"
                                 ></span>
@@ -91,16 +99,12 @@ get_header();
 
                     <?php while (have_rows('partners')): the_row(); ?>
                         <div class="partner">
-                            <img
-                                class="logo"
-                                src="<?php
-                                    if (get_sub_field('image')) {
-                                        echo get_sub_field('image');
-                                    } else {
-                                        echo 'default';
-                                    }
-                                ?>"
-                            />
+                            <?php if (get_sub_field('image')) { ?>
+                                <img
+                                    class="logo"
+                                    src="<?php echo get_sub_field('image'); ?>"
+                                />
+                            <?php } ?>
                             <span class="name"><?php echo get_sub_field('name'); ?></span>
                         </div>
                     <?php endwhile; ?>
