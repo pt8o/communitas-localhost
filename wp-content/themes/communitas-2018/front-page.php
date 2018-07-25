@@ -37,7 +37,7 @@ get_header();
                   <div class="video-container">
                     <div class="video-overlay"></div>
                     <div class="video-content" data-url="<?php echo $vimeo_id ?>"></div>
-                    <button class="close transparent">&#10006;</button>
+                    <button class="close transparent"><img src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-close-w.png' ) ); ?>"></button>
                   </div>
                 <?php
               endif;
