@@ -35,7 +35,7 @@
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'communitas-2018' ),
+				__( '&rarr; <span class="screen-reader-text">Continue reading "%s"</span>', 'communitas-2018' ),
 				array(
 					'span' => array(
 						'class' => array(),

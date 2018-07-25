@@ -1,0 +1,29 @@
+body.blog {
+    article.post {
+        position: relative;
+            margin-top: 80px;
+
+        &:not(:last-of-type) {
+            @include double-underline();
+        }
+    }
+    .entry-title {
+        font-size: $headline;
+        margin-after: 0;
+        -webkit-margin-after: 0;
+        line-height: 1em;
+    }
+
+    .meta {
+        text-transform: uppercase;
+    }
+
+    .entry-content > p:last-child {
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    .more-link {
+        font-size: $headline;
+    }
+}

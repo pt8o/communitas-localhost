@@ -865,7 +865,7 @@ a.card {
 
 body {
   font-family: 'Mada', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.2em;
   color: #111; }
 
@@ -1317,23 +1317,6 @@ body.page:not(.home) section {
     body.page:not(.home) section .subsection p {
       margin-top: 0; }
 
-article.post, article.page {
-  position: relative;
-  padding: 0 32px 32px;
-  max-width: 1200px; }
-  @media all and (min-width: 1200px) {
-    article.post, article.page {
-      left: 50%;
-      margin-left: -600px; } }
-
-body.single-post .meta {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 16px; }
-  body.single-post .meta > span {
-    vertical-align: middle; }
-
 body.page-id-7 .person {
   display: inline-block;
   margin-right: 48px;
@@ -1362,5 +1345,53 @@ body.page-id-7 .partner {
 body.page-id-7 .name {
   margin-left: 8px;
   vertical-align: middle; }
+
+article.post, article.page {
+  position: relative;
+  padding: 0 32px 32px;
+  max-width: 1200px; }
+  @media all and (min-width: 1200px) {
+    article.post, article.page {
+      left: 50%;
+      margin-left: -600px; } }
+
+body.single-post .meta {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 16px; }
+  body.single-post .meta > span {
+    vertical-align: middle; }
+
+body.blog article.post {
+  position: relative;
+  margin-top: 80px; }
+  body.blog article.post:not(:last-of-type)::before, body.blog article.post:not(:last-of-type)::after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 2px;
+    background-color: #ff527d; }
+  body.blog article.post:not(:last-of-type)::before {
+    width: 80px;
+    margin-left: -40px;
+    margin-top: 8px; }
+  body.blog article.post:not(:last-of-type)::after {
+    margin-top: 16px;
+    width: 40px;
+    margin-left: -20px; }
+body.blog .entry-title {
+  font-size: 36px;
+  margin-after: 0;
+  -webkit-margin-after: 0;
+  line-height: 1em; }
+body.blog .meta {
+  text-transform: uppercase; }
+body.blog .entry-content > p:last-child {
+  text-align: right;
+  margin-bottom: 0; }
+body.blog .more-link {
+  font-size: 36px; }
 
 /*# sourceMappingURL=style.css.map */

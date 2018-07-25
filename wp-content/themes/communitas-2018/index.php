@@ -20,7 +20,7 @@ get_header();
 			<div
                 class="page-headline"
                 style="background-image:url('<?php
-                    $headerImage = get_field('header_image');
+                    $headerImage = get_field('header_image', 24);
                     if ($headerImage){
                         echo $headerImage;
                     } else {
