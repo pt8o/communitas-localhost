@@ -1,4 +1,4 @@
-.page:not(.home) {
+body.page:not(.home) {
     #main {
         position: relative;
     }
@@ -13,7 +13,7 @@
         &::before {
             @include pseudo;
             @include overlay;
-            background-color: $blue;
+            background-color: $black;
             opacity: 0.7;
         }
 
@@ -39,7 +39,6 @@
 
     section {
         position: relative;
-        max-width: 1200px;
         padding: $padding-lg;
 
         h3, h4 {
@@ -64,5 +63,11 @@
                 margin-top: 0;
             }
         }
+    }
+
+    .entry-content {
+        position: relative;
+        padding: $padding-lg;
+        @include max-width();
     }
 }

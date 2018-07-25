@@ -866,7 +866,8 @@ a.card {
 body {
   font-family: 'Mada', sans-serif;
   font-size: 18px;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  color: #111; }
 
 p {
   line-height: 1.5em; }
@@ -908,7 +909,7 @@ form {
 .headline {
   font-size: 36px; }
 
-.home .card h4, .title {
+body.home .card h4, .title {
   font-size: 24px;
   font-weight: 900;
   line-height: 1em;
@@ -1176,55 +1177,55 @@ footer {
       .slideshow #slideshow-index .slideshow-index:first-of-type, .slideshow #slideshow-index .slideshow-index:last-of-type {
         margin: 0; }
 
-.home section {
+body.home section {
   float: left;
   width: 100%; }
-.home .card {
+body.home .card {
   position: relative;
   text-align: center;
   border: 0; }
-  .home .card * {
+  body.home .card * {
     z-index: 1; }
-  .home .card .card-title {
+  body.home .card .card-title {
     margin-top: 16px;
     text-align: center; }
-  .home .card h4 {
+  body.home .card h4 {
     display: inline-block;
     position: relative;
     padding-bottom: 16px; }
-    .home .card h4::before, .home .card h4::after {
+    body.home .card h4::before, body.home .card h4::after {
       content: ' ';
       position: absolute;
       top: 100%;
       left: 50%;
       height: 2px;
       background-color: #ff527d; }
-    .home .card h4::before {
+    body.home .card h4::before {
       width: 80px;
       margin-left: -40px;
       margin-top: 8px; }
-    .home .card h4::after {
+    body.home .card h4::after {
       margin-top: 16px;
       width: 40px;
       margin-left: -20px; }
-  .home .card p {
+  body.home .card p {
     position: relative;
     text-align: left;
     font-size: 24px; }
-.home a.card {
+body.home a.card {
   transition: background-color 250ms; }
-  .home a.card:hover, .home a.card:focus {
+  body.home a.card:hover, body.home a.card:focus {
     border: 0;
     background-color: #70a6bd; }
-.home .card-container {
+body.home .card-container {
   display: flex; }
-.home #about-communitas {
+body.home #about-communitas {
   position: relative;
   padding: 0;
   background: url("./static/home_newsprint.jpg");
   background-size: cover;
   color: #ffffff; }
-  .home #about-communitas::before {
+  body.home #about-communitas::before {
     content: ' ';
     position: absolute;
     left: 0;
@@ -1233,7 +1234,7 @@ footer {
     height: 100%;
     background-color: #005dab;
     opacity: 0.8; }
-  .home #about-communitas .hook {
+  body.home #about-communitas .hook {
     position: relative;
     font-size: 48px;
     text-align: center;
@@ -1241,23 +1242,23 @@ footer {
     padding: 48px;
     font-weight: 600;
     line-height: 1.2em; }
-.home #impact-news {
+body.home #impact-news {
   padding: 0; }
-  .home #impact-news .news {
+  body.home #impact-news .news {
     position: relative;
     border-left: 1px solid #005dab; }
-    .home #impact-news .news form {
+    body.home #impact-news .news form {
       width: 100%; }
 
-.page:not(.home) #main {
+body.page:not(.home) #main {
   position: relative; }
-.page:not(.home) .page-headline {
+body.page:not(.home) .page-headline {
   position: relative;
   height: 480px;
   padding: 32px;
   background-position: center;
   background-size: cover; }
-  .page:not(.home) .page-headline::before {
+  body.page:not(.home) .page-headline::before {
     content: ' ';
     position: absolute;
     left: 0;
@@ -1265,44 +1266,53 @@ footer {
     width: 100%;
     height: 100%;
     z-index: -0;
-    background-color: #005dab;
+    background-color: #000000;
     opacity: 0.7; }
-  .page:not(.home) .page-headline .headline {
+  body.page:not(.home) .page-headline .headline {
     position: absolute;
     bottom: 32px;
-    left: 32px; }
+    left: 32px;
+    max-width: 1200px; }
     @media all and (min-width: 1200px) {
-      .page:not(.home) .page-headline .headline {
+      body.page:not(.home) .page-headline .headline {
         left: 50%;
         margin-left: -600px; } }
-    .page:not(.home) .page-headline .headline h2 {
+    body.page:not(.home) .page-headline .headline h2 {
       display: inline-block;
       font-size: 48px;
       color: #ffffff;
       padding-bottom: 32px;
       border-bottom: 4px solid #ff527d; }
       @media all and (min-width: 1200px) {
-        .page:not(.home) .page-headline .headline h2 {
+        body.page:not(.home) .page-headline .headline h2 {
           margin-left: 32px; } }
-.page:not(.home) section {
+body.page:not(.home) section {
   position: relative;
-  max-width: 1200px;
-  padding: 32px; }
-  .page:not(.home) section h3, .page:not(.home) section h4 {
+  padding: 32px;
+  max-width: 1200px; }
+  body.page:not(.home) section h3, body.page:not(.home) section h4 {
     display: inline-block;
     border-bottom: 4px solid #ff527d; }
-  .page:not(.home) section h3 {
+  body.page:not(.home) section h3 {
     padding-bottom: 8px; }
-  .page:not(.home) section h4 {
+  body.page:not(.home) section h4 {
     padding-bottom: 4px; }
   @media all and (min-width: 1200px) {
-    .page:not(.home) section {
+    body.page:not(.home) section {
       left: 50%;
       margin-left: -600px; } }
-  .page:not(.home) section .subsection {
+  body.page:not(.home) section .subsection {
     margin-bottom: 32px; }
-    .page:not(.home) section .subsection p {
+    body.page:not(.home) section .subsection p {
       margin-top: 0; }
+body.page:not(.home) .entry-content {
+  position: relative;
+  padding: 32px;
+  max-width: 1200px; }
+  @media all and (min-width: 1200px) {
+    body.page:not(.home) .entry-content {
+      left: 50%;
+      margin-left: -600px; } }
 
 body.page-id-7 .person {
   display: inline-block;

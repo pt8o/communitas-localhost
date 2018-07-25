@@ -81,6 +81,8 @@ a.card {
 }
 
 @mixin max-width() {
+  max-width: 1200px;
+  
   @media all and (min-width: $break-max) {
     left: 50%;
     margin-left: -600px;
