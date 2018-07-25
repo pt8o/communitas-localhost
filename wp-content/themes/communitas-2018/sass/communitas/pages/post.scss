@@ -1,0 +1,5 @@
+article.post {
+    position: relative;
+    padding: $padding-lg;
+    @include max-width();
+}
