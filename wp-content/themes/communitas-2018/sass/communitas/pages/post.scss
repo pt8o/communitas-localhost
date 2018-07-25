@@ -16,4 +16,10 @@ body.single-post {
             vertical-align: middle;
         }
     }
+
+    nav.post-navigation {
+        position: relative;
+        padding: 0 $padding-lg;
+        @include max-width();
+    }
 }

@@ -1362,6 +1362,14 @@ body.single-post .meta {
   margin-bottom: 16px; }
   body.single-post .meta > span {
     vertical-align: middle; }
+body.single-post nav.post-navigation {
+  position: relative;
+  padding: 0 32px;
+  max-width: 1200px; }
+  @media all and (min-width: 1200px) {
+    body.single-post nav.post-navigation {
+      left: 50%;
+      margin-left: -600px; } }
 
 body.blog article.post {
   position: relative;

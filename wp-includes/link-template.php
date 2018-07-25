@@ -2028,10 +2028,13 @@ function get_adjacent_post_link( $format, $link, $in_same_term = false, $exclude
 		$date = mysql2date( get_option( 'date_format' ), $post->post_date );
 		$rel = $previous ? 'prev' : 'next';
 
-		$string = '<a href="' . get_permalink( $post ) . '" rel="'.$rel.'">';
+		$prev_arrow = $previous ? '&larr;' : '';
+		$next_arrow = $previous ? '' : '&rarr;';
+
+		$string = '<a href="' . get_permalink( $post ) . '" rel="'.$rel.'">' . $prev_arrow;
 		$inlink = str_replace( '%title', $title, $link );
 		$inlink = str_replace( '%date', $date, $inlink );
-		$inlink = $string . $inlink . '</a>';
+		$inlink = $string . $inlink . $next_arrow . '</a>';
 
 		$output = str_replace( '%link', $inlink, $format );
 	}
