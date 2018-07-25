@@ -44,7 +44,7 @@
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-twitter.png' ) ); ?>" alt="Twitter"/>
       </a><a class="responsive" href="https://www.facebook.com/communitasmontreal/">
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-facebook.png' ) ); ?>" alt="Facebook"/>
-      </a><a class="button-square inverted" href="http://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d10867">
+      </a><a class="button-square inverted" href="<?php echo esc_url( home_url( '/donate/' ) ); ?>">
         Donate
       </a>
     </div>
