@@ -78,7 +78,11 @@
         position: fixed;
         top: $padding-md;
         right: $padding-md;
-        font-size: $headline;
+
+        img {
+          max-width: 48px;
+          max-height: 48px;
+        }
       }
 
       .video-overlay {
