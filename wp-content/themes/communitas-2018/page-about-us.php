@@ -10,7 +10,17 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <div class="page-headline">
+            <div
+                class="page-headline"
+                style="background-image:url('<?php
+                    $headerImage = get_field('header_image');
+                    if ($headerImage){
+                        echo $headerImage;
+                    } else {
+                        echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/home_newsprint.jpg' ) );
+                    }
+                ?>');"
+            >
                 <div class="headline">
                     <h2><?php echo get_the_title() ?></h2>
                 </div>
