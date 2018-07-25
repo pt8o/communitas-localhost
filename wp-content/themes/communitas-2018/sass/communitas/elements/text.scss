@@ -20,6 +20,19 @@ $bold: 900;
   text-transform: uppercase;
 }
 
+blockquote {
+  font-size: $title;
+  font-style: italic;
+  margin: $padding-xl;
+  padding-left: $padding-lg;
+  border-left: 4px solid $accent;
+
+  @media all and (max-width: $break-tablet) {
+    margin: $padding-lg;
+    padding-left: $padding-md;
+  }
+}
+
 // Text effects
 @mixin text-shadow() {
   text-shadow: $shadow;

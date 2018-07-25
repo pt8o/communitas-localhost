@@ -915,6 +915,17 @@ body.home .card h4, .title {
   line-height: 1em;
   text-transform: uppercase; }
 
+blockquote {
+  font-size: 24px;
+  font-style: italic;
+  margin: 48px;
+  padding-left: 32px;
+  border-left: 4px solid #ff527d; }
+  @media all and (max-width: 768px) {
+    blockquote {
+      margin: 32px;
+      padding-left: 16px; } }
+
 button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a, input[type="button"] {
   font-family: 'Mada', sans-serif;
   font-size: 18px;
