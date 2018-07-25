@@ -1180,7 +1180,6 @@ footer {
 .page-headline {
   position: relative;
   height: 480px;
-  padding: 32px;
   background-position: center;
   background-size: cover; }
   .page-headline::before {
@@ -1196,8 +1195,9 @@ footer {
   .page-headline .headline {
     position: absolute;
     bottom: 32px;
-    left: 32px;
-    margin-right: 32px;
+    left: 0;
+    padding-right: 32px;
+    padding-left: 32px;
     max-width: 1200px; }
     @media all and (min-width: 1200px) {
       .page-headline .headline {
@@ -1210,9 +1210,6 @@ footer {
       padding-bottom: 32px;
       border-bottom: 4px solid #ff527d;
       line-height: 1em; }
-      @media all and (min-width: 1200px) {
-        .page-headline .headline h2 {
-          margin-left: 32px; } }
 
 body.home section {
   float: left;
@@ -1308,23 +1305,23 @@ body.page:not(.home) section {
     margin-bottom: 32px; }
     body.page:not(.home) section .subsection p {
       margin-top: 0; }
-body.page:not(.home) .entry-content {
+
+article.post, article.page {
   position: relative;
-  padding: 32px;
+  padding: 0 32px 32px;
   max-width: 1200px; }
   @media all and (min-width: 1200px) {
-    body.page:not(.home) .entry-content {
+    article.post, article.page {
       left: 50%;
       margin-left: -600px; } }
 
-article.post {
-  position: relative;
-  padding: 32px;
-  max-width: 1200px; }
-  @media all and (min-width: 1200px) {
-    article.post {
-      left: 50%;
-      margin-left: -600px; } }
+body.single-post .meta {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 16px; }
+  body.single-post .meta > span {
+    vertical-align: middle; }
 
 body.page-id-7 .person {
   display: inline-block;

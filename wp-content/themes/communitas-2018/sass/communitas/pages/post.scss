@@ -1,5 +1,19 @@
-article.post {
+// Make page/post main content max width
+article.post, article.page {
     position: relative;
-    padding: $padding-lg;
+    padding: 0 $padding-lg $padding-lg;
     @include max-width();
+}
+
+body.single-post {
+    .meta {
+        font-size: $paragraph;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: $padding-md;
+
+        > span {
+            vertical-align: middle;
+        }
+    }
 }

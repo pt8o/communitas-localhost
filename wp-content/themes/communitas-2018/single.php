@@ -24,14 +24,15 @@ get_header();
                 ?>');"
             >
                 <div class="headline">
-                    <h2><?php echo get_the_title() ?></h2>
+					<h2><?php echo get_the_title() ?></h2>
+					<?php while ( have_posts() ) : the_post(); ?>
+					<div class="meta">
+						<?php communitas_2018_posted_on(); echo '&nbsp;&nbsp;|&nbsp;&nbsp;'; communitas_2018_posted_by(); ?>
+					</div>
                 </div>
-			</div>
+			</div>				
 
 		<?php
-		while ( have_posts() ) :
-			the_post();
-
 			get_template_part( 'template-parts/content', get_post_type() );
 
 			the_post_navigation();
@@ -41,8 +42,7 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
-		?>
+		endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

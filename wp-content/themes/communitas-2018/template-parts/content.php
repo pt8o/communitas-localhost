@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<!-- <header class="entry-header">
 		<?php
 		// if ( is_singular() ) :
 		// 	the_title( '<h2 class="entry-title">', '</h2>' );
@@ -25,11 +25,12 @@
 				communitas_2018_posted_on();
 				communitas_2018_posted_by();
 				?>
-			</div><!-- .entry-meta -->
+			</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header> -->
+	<!-- .entry-header -->
 
-	<?php communitas_2018_post_thumbnail(); ?>
+	<!-- <?php communitas_2018_post_thumbnail(); ?> -->
 
 	<div class="entry-content">
 		<?php

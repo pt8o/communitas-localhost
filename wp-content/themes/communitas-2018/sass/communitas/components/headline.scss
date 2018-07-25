@@ -1,7 +1,6 @@
 .page-headline {
     position: relative;
     height: 480px;
-    padding: $padding-lg;
     background-position: center;
     background-size: cover;
 
@@ -15,8 +14,9 @@
     .headline {
         position: absolute;
         bottom: $padding-lg;
-        left: $padding-lg;
-        margin-right: $padding-lg;
+        left: 0;
+        padding-right: $padding-lg;
+        padding-left: $padding-lg;
         @include max-width;
 
         h2 {
@@ -26,10 +26,6 @@
             padding-bottom: $padding-lg;
             border-bottom: 4px solid $accent;
             line-height: 1em;
-
-            @media all and (min-width: $break-max) {
-                margin-left: $padding-lg;
-            }
         }
     }
 }
