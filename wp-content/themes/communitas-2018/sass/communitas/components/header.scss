@@ -7,9 +7,9 @@
   transition: background-color $transition, padding $transition;
 
   a {
+    @include text-shadow-light;
     color: $white;
     font-weight: $semibold;
-    text-shadow: 0 0 4px $black;
   }
 
   // LOGO
@@ -98,7 +98,8 @@
       // Donate button
       > .menu-item:last-of-type a {
         @extend %button-square;
-        @extend %inverted;
+        @include text-shadow-light;
+        background-color: $accent;
       }
     }
   }

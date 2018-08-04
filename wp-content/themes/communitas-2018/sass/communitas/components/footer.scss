@@ -25,5 +25,11 @@ footer {
       margin: 0 $padding-sm;
       vertical-align: middle;
     }
+
+    .donation-button {
+      @extend %button-square;
+      @include text-shadow-light;
+      background-color: $accent;
+    }
   }
 }

@@ -1,9 +1,6 @@
 form {
-  font-family: monospace;
-  display: flex;
-  height: 48px;
-
-  input[type="text"] {
+  input[type="text"],
+  input[type="email"] {
     font-family: monospace;
     padding-right: $padding-md;
     border: 0;
@@ -14,5 +11,18 @@ form {
 
   button {
     margin-left: $padding-sm;
+  }
+}
+
+// MailChimp overrides
+#mc_embed_signup {
+  form {
+    padding: 0;
+  }
+
+  #mc-embedded-subscribe {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
   }
 }

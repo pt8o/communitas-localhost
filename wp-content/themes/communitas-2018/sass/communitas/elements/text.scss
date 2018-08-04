@@ -37,3 +37,7 @@ blockquote {
 @mixin text-shadow() {
   text-shadow: $shadow;
 }
+
+@mixin text-shadow-light() {
+  text-shadow: 0 0 4px $black;
+}
