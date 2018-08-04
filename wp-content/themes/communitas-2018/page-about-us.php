@@ -64,7 +64,12 @@ get_header();
                                         }
                                     ?>');"
                                 ></span>
-                                <span class="name"><?php echo $val['name']; ?></span>
+                                <div class="person-text">
+                                    <div class="name"><?php echo $val['name']; ?></div>
+                                    <?php if ($val['position']) { ?>
+                                        <div class="position"><?php echo $val['position']; ?></div>
+                                    <?php } ?>
+                                </div>
                             </div>
                         <?php } ?>
                     </div>
@@ -89,7 +94,12 @@ get_header();
                                         }
                                     ?>');"
                                 ></span>
-                                <span class="name"><?php echo $val['name']; ?></span>
+                                <div class="person-text">
+                                    <div class="name"><?php echo $val['name']; ?></div>
+                                    <?php if ($val['position']) { ?>
+                                        <div class="position"><?php echo $val['position']; ?></div>
+                                    <?php } ?>
+                                </div>
                             </div>
                         <?php } ?>
                     </div>

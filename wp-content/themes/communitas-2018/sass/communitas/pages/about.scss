@@ -1,14 +1,17 @@
 body.page-id-7 {
     .person {
+        position: relative;
         display: inline-block;
-        margin-right: $padding-xl;
-        margin-bottom: $padding-lg;
+        margin-right: $padding-md;
+        margin-bottom: $padding-md;
+        border-radius: $corner;
+        overflow: hidden;
 
         .portrait {
             display: inline-block;
             vertical-align: middle;
             
-            $portrait-size: 60px;
+            $portrait-size: 240px;
             min-width: $portrait-size;
             width: $portrait-size;
             min-height: $portrait-size;
@@ -17,11 +20,47 @@ body.page-id-7 {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            border-radius: 100%;
 
             &.default {
                 background-color: $blue;
                 background-size: 75%;
+            }
+        }
+
+        // overlay to make text more legible
+        &::before {
+            @include pseudo;
+            @include overlay;
+            background-color: $black;
+            opacity: 0;
+            transition: opacity $transition;
+        }
+
+        .person-text {
+            position: absolute;
+            bottom: $padding-md;
+            left: $padding-md;
+            color: $white;
+            opacity: 0;
+            transition: opacity $transition;
+
+            .name {
+                font-weight: $semibold;
+            }
+
+            .position {
+                text-transform: uppercase;
+                font-size: $small-text;
+            }
+        }
+    
+        &:hover {
+            &::before {
+                opacity: 0.7;
+            }
+            
+            .person-text {
+                opacity: 1;
             }
         }
     }
@@ -35,12 +74,5 @@ body.page-id-7 {
             max-width: 144px;
             max-height: 120px;
         }
-    }
-
-    // shared between persons and partners
-    .name {
-        // font-weight: $semibold;
-        margin-left: $padding-sm;
-        vertical-align: middle;
     }
 }
