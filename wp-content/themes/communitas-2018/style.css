@@ -1311,13 +1311,6 @@ body.page:not(.home) section {
   position: relative;
   padding: 32px;
   max-width: 1200px; }
-  body.page:not(.home) section h3, body.page:not(.home) section h4 {
-    display: inline-block;
-    border-bottom: 4px solid #ff527d; }
-  body.page:not(.home) section h3 {
-    padding-bottom: 8px; }
-  body.page:not(.home) section h4 {
-    padding-bottom: 4px; }
   @media all and (min-width: 1200px) {
     body.page:not(.home) section {
       left: 50%;
@@ -1326,6 +1319,13 @@ body.page:not(.home) section {
     margin-bottom: 32px; }
     body.page:not(.home) section .subsection p {
       margin-top: 0; }
+body.page:not(.home) h3, body.page:not(.home) h4 {
+  display: inline-block;
+  border-bottom: 4px solid #ff527d; }
+body.page:not(.home) h3 {
+  padding-bottom: 8px; }
+body.page:not(.home) h4 {
+  padding-bottom: 4px; }
 
 body.page-id-7 .person {
   position: relative;
@@ -1382,30 +1382,35 @@ body.page-id-7 .partner {
     max-width: 144px;
     max-height: 120px; }
 
-article.post, article.page {
+body.page-id-22 .newsletter-container {
+  display: flex; }
+body.page-id-22 .newsletter-edition {
+  text-align: center;
   position: relative;
-  padding: 0 32px 32px;
-  max-width: 1200px; }
-  @media all and (min-width: 1200px) {
-    article.post, article.page {
-      left: 50%;
-      margin-left: -600px; } }
-
-body.single-post .meta {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 16px; }
-  body.single-post .meta > span {
-    vertical-align: middle; }
-body.single-post nav.post-navigation {
-  position: relative;
-  padding: 0 32px;
-  max-width: 1200px; }
-  @media all and (min-width: 1200px) {
-    body.single-post nav.post-navigation {
-      left: 50%;
-      margin-left: -600px; } }
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+  flex-grow: 1; }
+  body.page-id-22 .newsletter-edition .newsletter-title {
+    margin-bottom: 16px;
+    font-weight: 600; }
+  body.page-id-22 .newsletter-edition .overlay {
+    text-shadow: 0 0 4px #000000;
+    position: absolute;
+    bottom: 16px;
+    padding: 16px;
+    left: 10%;
+    width: 80%;
+    z-index: 2;
+    opacity: 0;
+    color: #ffffff;
+    background-color: #70a6bd;
+    opacity: 0;
+    transition: opacity 250ms; }
+  body.page-id-22 .newsletter-edition:hover .overlay {
+    opacity: 1; }
 
 body.blog article.post {
   position: relative;
@@ -1437,5 +1442,30 @@ body.blog .entry-content > p:last-child {
   margin-bottom: 0; }
 body.blog .more-link {
   font-size: 36px; }
+
+article.post, article.page {
+  position: relative;
+  padding: 0 32px 32px;
+  max-width: 1200px; }
+  @media all and (min-width: 1200px) {
+    article.post, article.page {
+      left: 50%;
+      margin-left: -600px; } }
+
+body.single-post .meta {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 16px; }
+  body.single-post .meta > span {
+    vertical-align: middle; }
+body.single-post nav.post-navigation {
+  position: relative;
+  padding: 0 32px;
+  max-width: 1200px; }
+  @media all and (min-width: 1200px) {
+    body.single-post nav.post-navigation {
+      left: 50%;
+      margin-left: -600px; } }
 
 /*# sourceMappingURL=style.css.map */

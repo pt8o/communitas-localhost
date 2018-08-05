@@ -22,11 +22,16 @@ $accent: #ff527d;
 // Effects
 $transition: 250ms;
 $shadow: 2px 2px 0px $black;
+$shadow-light: 0 0 4px $black;
 $opacity: 0.9;
 
 // Various mixins
 @mixin box-shadow() {
   box-shadow: $shadow;
+}
+
+@mixin box-shadow-light() {
+  box-shadow: $shadow-light;
 }
 
 @mixin pseudo() {

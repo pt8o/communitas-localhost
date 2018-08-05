@@ -1,0 +1,54 @@
+body.page-id-22 {
+    .newsletter-container {
+        display: flex;
+    }
+
+    .newsletter-edition {
+        text-align: center;
+        position: relative;
+        color: $black;
+        border: none;
+        border-radius: $corner;
+        padding: $padding-md;
+        overflow: hidden;
+        flex-grow: 1;
+
+        .newsletter-title {
+            margin-bottom: $padding-md;
+            font-weight: $semibold;
+        }
+
+        .overlay {
+            @include text-shadow-light;
+            position: absolute;
+            bottom: $padding-md;
+            padding: $padding-md;
+            left: 10%;
+            width: 80%;
+            z-index: 2;
+            opacity: 0;
+            color: $white;
+            background-color: $teal;
+            opacity: 0;
+            transition: opacity $transition;
+        }
+
+        // &::after {
+        //     @include pseudo;
+        //     @include overlay;
+        //     background-color: $teal;
+        //     opacity: 0;
+        //     transition: opacity $transition;
+        // }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            // &::after {
+            //     opacity: 0.8;
+            // }
+        }
+    }
+}

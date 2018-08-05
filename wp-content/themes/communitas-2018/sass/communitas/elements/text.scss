@@ -40,5 +40,5 @@ blockquote {
 }
 
 @mixin text-shadow-light() {
-  text-shadow: 0 0 4px $black;
+  text-shadow: $shadow-light;
 }

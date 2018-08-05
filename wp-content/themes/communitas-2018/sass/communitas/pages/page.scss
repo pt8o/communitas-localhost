@@ -7,19 +7,6 @@ body.page:not(.home) {
         position: relative;
         padding: $padding-lg;
 
-        h3, h4 {
-            display: inline-block;
-            border-bottom: 4px solid $accent;
-        }
-
-        h3 {
-            padding-bottom: $padding-sm;
-        }
-
-        h4 {
-            padding-bottom: $padding-xs;
-        }
-
         @include max-width();
 
         .subsection {
@@ -29,5 +16,18 @@ body.page:not(.home) {
                 margin-top: 0;
             }
         }
+    }
+
+    h3, h4 {
+        display: inline-block;
+        border-bottom: 4px solid $accent;
+    }
+
+    h3 {
+        padding-bottom: $padding-sm;
+    }
+
+    h4 {
+        padding-bottom: $padding-xs;
     }
 }
