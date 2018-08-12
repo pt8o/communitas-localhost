@@ -15,9 +15,9 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Mada:400,600,900" rel="stylesheet">
-	<link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+	<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css"
           rel="stylesheet" type="text/css">
 
 	<?php wp_head(); ?>
