@@ -131,7 +131,7 @@ add_action('init', 'modify_jquery');
  * Enqueue scripts and styles.
  */
 function communitas_2018_scripts() {
-	wp_enqueue_style( 'communitas-2018-style', get_stylesheet_uri(), array(), 'pre-0.0.2' );
+	wp_enqueue_style( 'communitas-2018-style', get_stylesheet_uri(), array(), 'pre-0.0.3' );
 
 	wp_enqueue_script( 'communitas-2018-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
