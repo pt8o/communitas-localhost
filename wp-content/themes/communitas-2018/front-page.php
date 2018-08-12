@@ -136,17 +136,6 @@ get_header();
           <label for="mce-LNAME">Last Name </label>
           <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
           </div>
-          <div class="mc-field-group size1of2">
-          <label for="mce-BIRTHDAY-month">Birthday </label>
-          <div class="datefield">
-          <span class="subfield monthfield"><input class="birthday " type="text"
-          pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2"
-          name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"></span> /
-          <span class="subfield dayfield"><input class="birthday " type="text"
-          pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2"
-          name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span>
-          <span class="small-meta nowrap">( mm / dd )</span>
-          </div>
           </div> <div id="mce-responses" class="clear">
           <div class="response" id="mce-error-response"
           style="display:none"></div>
@@ -164,7 +153,7 @@ get_header();
           </form>
           </div>
           <script type='text/javascript'
-          src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames
+          src='<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/js/mc-validate.js' ) ); ?>'></script><script type='text/javascript'>(function($) {window.fnames
           = new Array(); window.ftypes = new
           Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var
           $mcj = jQuery.noConflict(true);</script>
