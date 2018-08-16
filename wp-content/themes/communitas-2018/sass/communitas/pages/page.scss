@@ -30,4 +30,8 @@ body.page:not(.home) {
     h4 {
         padding-bottom: $padding-xs;
     }
+
+    .card h4 {
+        border-bottom: 0;
+    }
 }

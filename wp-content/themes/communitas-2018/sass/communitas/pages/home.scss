@@ -14,50 +14,6 @@ body.home {
     width: 100%;
   }
 
-  .card {
-    position: relative;
-    text-align: center;
-    border: 0;
-
-    * {
-      z-index: 1;
-    }
-
-    .card-title {
-      margin-top: $padding-md;
-      text-align: center;
-    }
-
-    h4 {
-      @extend %title;
-      display: inline-block;
-      position: relative;
-      padding-bottom: $padding-md;
-
-      // Cool double underline thing
-      @include double-underline;
-    }
-
-    p {
-      position: relative;
-      text-align: left;
-      font-size: $title;
-    }
-  }
-
-  a.card {
-    transition: background-color $transition;
-
-    &:hover, &:focus {
-      border: 0;
-      background-color: $teal;
-    }
-  }
-
-  .card-container {
-    display: flex;
-  }
-
   #about-communitas {
     position: relative;
     padding: 0;

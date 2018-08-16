@@ -913,7 +913,7 @@ form button {
 .headline {
   font-size: 36px; }
 
-body.home .card h4, .title {
+.card h4, .title {
   font-size: 24px;
   font-weight: 900;
   line-height: 1em;
@@ -1232,50 +1232,53 @@ footer {
       border-bottom: 4px solid #ff527d;
       line-height: 1em; }
 
-body.home #menu-item-150 {
-  display: none !important; }
-body.home section {
-  float: left;
-  width: 100%; }
-body.home .card {
+.card {
   position: relative;
   text-align: center;
   border: 0; }
-  body.home .card * {
+  .card * {
     z-index: 1; }
-  body.home .card .card-title {
+  .card .card-title {
     margin-top: 16px;
     text-align: center; }
-  body.home .card h4 {
+  .card h4 {
     display: inline-block;
     position: relative;
     padding-bottom: 16px; }
-    body.home .card h4::before, body.home .card h4::after {
+    .card h4::before, .card h4::after {
       content: ' ';
       position: absolute;
       top: 100%;
       left: 50%;
       height: 2px;
       background-color: #ff527d; }
-    body.home .card h4::before {
+    .card h4::before {
       width: 80px;
       margin-left: -40px;
       margin-top: 8px; }
-    body.home .card h4::after {
+    .card h4::after {
       margin-top: 16px;
       width: 40px;
       margin-left: -20px; }
-  body.home .card p {
+  .card p {
     position: relative;
     text-align: left;
     font-size: 24px; }
-body.home a.card {
+
+a.card {
   transition: background-color 250ms; }
-  body.home a.card:hover, body.home a.card:focus {
+  a.card:hover, a.card:focus {
     border: 0;
     background-color: #70a6bd; }
-body.home .card-container {
+
+.card-container {
   display: flex; }
+
+body.home #menu-item-150 {
+  display: none !important; }
+body.home section {
+  float: left;
+  width: 100%; }
 body.home #about-communitas {
   position: relative;
   padding: 0;
@@ -1328,6 +1331,8 @@ body.page:not(.home) h3 {
   padding-bottom: 8px; }
 body.page:not(.home) h4 {
   padding-bottom: 4px; }
+body.page:not(.home) .card h4 {
+  border-bottom: 0; }
 
 body.page-id-7 .person {
   position: relative;
@@ -1403,8 +1408,8 @@ body.page-id-22 .newsletter-edition {
     position: absolute;
     bottom: 16px;
     padding: 16px;
-    left: 10%;
-    width: 80%;
+    left: 0;
+    width: 100%;
     z-index: 2;
     opacity: 0;
     color: #ffffff;
