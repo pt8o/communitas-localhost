@@ -1,4 +1,9 @@
 body.home {
+  // MENU
+  // hide "home"
+  #menu-item-150 {
+    display: none !important;
+  }
 
   // SLIDESHOW
   // see components

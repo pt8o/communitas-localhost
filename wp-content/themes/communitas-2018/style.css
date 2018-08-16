@@ -1232,6 +1232,8 @@ footer {
       border-bottom: 4px solid #ff527d;
       line-height: 1em; }
 
+body.home #menu-item-150 {
+  display: none !important; }
 body.home section {
   float: left;
   width: 100%; }
