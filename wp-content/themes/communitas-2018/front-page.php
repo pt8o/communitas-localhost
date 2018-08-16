@@ -37,7 +37,7 @@ get_header();
                   <div class="video-container">
                     <div class="video-overlay"></div>
                     <div class="video-content" data-url="<?php echo $vimeo_id ?>"></div>
-                    <button class="close transparent"><img src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-close-w.png' ) ); ?>"></button>
+                    <button class="close transparent"><img src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-close-w.png' ) ); ?>" alt="Close"></button>
                   </div>
                 <?php
               endif;
@@ -99,14 +99,14 @@ get_header();
       <section id="impact-news">
         <div class="card responsive half">
           <div class="card-title">
-            <img class="icon-deco" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-handshake.png' ) ); ?>" alt="Communitas logo" /><br/>
+            <img class="icon-deco" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-handshake.png' ) ); ?>" alt="" /><br/>
             <?php $our_impact = get_field('our_impact'); ?>
             <h4><?php echo $our_impact['title']?></h4>
           </div>
           <p><?php echo $our_impact['text']?></p>
         </div><div class="news card responsive half">
           <div class="card-title">
-            <img class="icon-deco" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-broadcast.png' ) ); ?>" alt="Communitas logo" /><br/>
+            <img class="icon-deco" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-broadcast.png' ) ); ?>" alt="" /><br/>
             <?php $hear_the_latest = get_field('hear_the_latest'); ?>
             <h4><?php echo $hear_the_latest['title']?></h4>
           </div>
