@@ -108,7 +108,7 @@ get_header();
                     <div class="subsection volunteers">
                         <?php $volunteers = get_sub_field('volunteers'); ?>
                         <h4><?php echo $volunteers['title']; ?></h4><br/>
-                        <p><?php echo $volunteers['description']; ?></p>
+                        <?php echo $volunteers['description']; ?>
                     </div>
                 </section>
             <?php endif; ?>

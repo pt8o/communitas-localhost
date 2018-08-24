@@ -103,7 +103,7 @@ get_header();
             <?php $our_impact = get_field('our_impact'); ?>
             <h4><?php echo $our_impact['title']?></h4>
           </div>
-          <p><?php echo $our_impact['text']?></p>
+          <?php echo $our_impact['text']?>
         </div><div class="news card responsive half">
           <div class="card-title">
             <img class="icon-deco" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-broadcast.png' ) ); ?>" alt="" /><br/>
