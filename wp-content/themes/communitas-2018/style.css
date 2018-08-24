@@ -828,19 +828,28 @@ object {
 .removed {
   display: none; }
 
+.half {
+  width: 50%; }
+
+.third {
+  width: 33.3%; }
+  .third:last-of-type {
+    width: 33.4%; }
+    @media all and (max-width: 1200px) {
+      .third:last-of-type {
+        width: 100%; } }
+
+.quarter {
+  width: 25%;
+  margin-left: 4px;
+  margin-right: 4px; }
+
 .responsive {
   vertical-align: top;
   display: inline-block; }
-  .responsive.half {
-    width: 50%; }
-  .responsive.third {
-    width: 33.3%; }
-    .responsive.third:last-of-type {
-      width: 33.4%; }
-  .responsive.quarter {
-    width: 25%;
-    margin-left: 4px;
-    margin-right: 4px; }
+  @media all and (max-width: 1200px) {
+    .responsive {
+      width: 100%; } }
 
 .bg-dark {
   color: #ffffff;
@@ -1273,6 +1282,9 @@ a.card {
 
 .card-container {
   display: flex; }
+  @media all and (max-width: 1200px) {
+    .card-container {
+      display: block; } }
 
 body.home #menu-item-150 {
   display: none !important; }

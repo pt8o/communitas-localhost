@@ -40,4 +40,8 @@
 
 .card-container {
     display: flex;
+
+    @media all and (max-width: $tablet) {
+        display: block;
+    }
 }
