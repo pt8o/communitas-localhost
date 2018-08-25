@@ -41,8 +41,12 @@ body.home {
       font-weight: $semibold;
       line-height: 1.2em;
 
-      @media all and (max-width: $tablet) {
+      @media all and (max-width: $break-max) {
         padding: $padding-lg $padding-xl;
+      }
+
+      @media all and (max-width: $break-phone) {
+        font-size: $headline;
       }
     }
   }

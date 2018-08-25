@@ -29,7 +29,7 @@
 		<!-- </div> -->
     <!-- .site-info -->
 
-    <div class="responsive half site-branding">
+    
       <img class="logo" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/logo_white.png' ) ); ?>" alt="Communitas logo" />
       <div class="address">
         3974 Notre Dame Street West, Suite B<br/>
@@ -37,17 +37,18 @@
         +1 514 244 6147<br/>
         info@communitasmontreal.org
       </div>
-    </div><div class="responsive half contacts-container">
-      <a class="responsive" href="mailto:info@communitasmontreal.org">
+    
+      <div class="contact-container">
+      <a href="mailto:info@communitasmontreal.org">
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/mail.png' ) ); ?>" alt="Email"/>
-      </a><a class="responsive" href="https://twitter.com/Communitas_MTL">
+      </a><a href="https://twitter.com/Communitas_MTL">
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/twitter.png' ) ); ?>" alt="Twitter"/>
-      </a><a class="responsive" href="https://www.facebook.com/communitasmontreal/">
+      </a><a href="https://www.facebook.com/communitasmontreal/">
         <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/facebook.png' ) ); ?>" alt="Facebook"/>
       </a><a class="donation-button" href="<?php echo esc_url( home_url( '/donate/' ) ); ?>">
         Donate
       </a>
-    </div>
+      </div>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->

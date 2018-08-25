@@ -28,6 +28,10 @@
         width: auto;
       }
     }
+
+    @media all and (max-width: $break-phone) {
+      height: 64px;
+    }
   }
 
   // TOP MENU
@@ -126,6 +130,10 @@
           max-height: 100%;
           width: auto;
         }
+      }
+
+      @media all and (max-width: $break-phone) {
+        height: $menu-height-mobile;
       }
     }
 

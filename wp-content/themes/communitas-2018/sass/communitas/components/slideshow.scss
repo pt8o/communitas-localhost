@@ -110,6 +110,13 @@
     font-size: $headline;
     font-weight: $bold;
     line-height: 1.2em;
+
+    @media all and (max-width: $break-phone) {
+      font-size: $title;
+      width: 100%;
+      padding-right: $padding-lg;
+      margin-bottom: $padding-sm;
+    }
   }
 
   .slideshow-control {

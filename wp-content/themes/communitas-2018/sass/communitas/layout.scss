@@ -1,8 +1,8 @@
 $menu-height-full: 100px;
 $menu-height-reduced: 56px;
+$menu-height-mobile: 48px;
 
-$tablet: 1200px;
-$phone: 600px;
+$break-phone: 600px;
 
 .hidden {
   opacity: 0;
@@ -21,7 +21,7 @@ $phone: 600px;
   width: 33.3%;
   &:last-of-type {
     width: 33.4%;
-    @media all and (max-width: $tablet) {
+    @media all and (max-width: $break-max) {
       width: 100%;
     }
   }
@@ -37,7 +37,7 @@ $phone: 600px;
   vertical-align: top;
   display: inline-block;
 
-  @media all and (max-width: $tablet) {
+  @media all and (max-width: $break-max) {
     width: 100%;
   }
 }

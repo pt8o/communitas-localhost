@@ -949,7 +949,7 @@ blockquote {
       margin: 32px;
       padding-left: 16px; } }
 
-button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a, footer .responsive.contacts-container .donation-button, input[type="submit"] {
+button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a, footer .donation-button, input[type="submit"] {
   font-family: 'Mada', sans-serif;
   font-size: 18px;
   color: #ffffff;
@@ -959,29 +959,29 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
   padding: 8px 16px;
   font-weight: 600;
   transition: background-color 250ms; }
-  button:hover, button:focus, .button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:hover, footer .responsive.contacts-container .donation-button:hover, .button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:focus, footer .responsive.contacts-container .donation-button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  button:hover, button:focus, .button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:hover, footer .donation-button:hover, .button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:focus, footer .donation-button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     text-decoration: none;
     background-color: #70a6bd; }
-  button[disabled], button.disabled, [disabled].button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a[disabled], footer .responsive.contacts-container [disabled].donation-button, .disabled.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.disabled, footer .responsive.contacts-container .disabled.donation-button, input[type="submit"][disabled], input[type="submit"].disabled {
+  button[disabled], button.disabled, [disabled].button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a[disabled], footer [disabled].donation-button, .disabled.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.disabled, footer .disabled.donation-button, input[type="submit"][disabled], input[type="submit"].disabled {
     opacity: 0.5;
     color: #ffffff;
     background-color: #000000; }
-    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a[disabled]:hover, footer .responsive.contacts-container [disabled].donation-button:hover, [disabled].button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a[disabled]:focus, footer .responsive.contacts-container [disabled].donation-button:focus, .disabled.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.disabled:hover, footer .responsive.contacts-container .disabled.donation-button:hover, .disabled.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.disabled:focus, footer .responsive.contacts-container .disabled.donation-button:focus, input[type="submit"][disabled]:hover, input[type="submit"][disabled]:focus, input[type="submit"].disabled:hover, input[type="submit"].disabled:focus {
+    button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus, [disabled].button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a[disabled]:hover, footer [disabled].donation-button:hover, [disabled].button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a[disabled]:focus, footer [disabled].donation-button:focus, .disabled.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.disabled:hover, footer .disabled.donation-button:hover, .disabled.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.disabled:focus, footer .disabled.donation-button:focus, input[type="submit"][disabled]:hover, input[type="submit"][disabled]:focus, input[type="submit"].disabled:hover, input[type="submit"].disabled:focus {
       color: #ffffff;
       background-color: #000000; }
-  button.inverted, .inverted.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.inverted, footer .responsive.contacts-container .inverted.donation-button, input[type="submit"].inverted {
+  button.inverted, .inverted.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.inverted, footer .inverted.donation-button, input[type="submit"].inverted {
     color: #ffffff;
     background-color: transparent; }
-    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.inverted:hover, footer .responsive.contacts-container .inverted.donation-button:hover, .inverted.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.inverted:focus, footer .responsive.contacts-container .inverted.donation-button:focus, input[type="submit"].inverted:hover, input[type="submit"].inverted:focus {
+    button.inverted:hover, button.inverted:focus, .inverted.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.inverted:hover, footer .inverted.donation-button:hover, .inverted.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.inverted:focus, footer .inverted.donation-button:focus, input[type="submit"].inverted:hover, input[type="submit"].inverted:focus {
       color: #ffffff;
       background-color: #70a6bd;
       text-shadow: none; }
-  button.transparent, .transparent.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.transparent, footer .responsive.contacts-container .transparent.donation-button, input[type="submit"].transparent {
+  button.transparent, .transparent.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.transparent, footer .transparent.donation-button, input[type="submit"].transparent {
     background-color: transparent; }
-    button.transparent:hover, button.transparent:focus, .transparent.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.transparent:hover, footer .responsive.contacts-container .transparent.donation-button:hover, .transparent.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.transparent:focus, footer .responsive.contacts-container .transparent.donation-button:focus, input[type="submit"].transparent:hover, input[type="submit"].transparent:focus {
+    button.transparent:hover, button.transparent:focus, .transparent.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.transparent:hover, footer .transparent.donation-button:hover, .transparent.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.transparent:focus, footer .transparent.donation-button:focus, input[type="submit"].transparent:hover, input[type="submit"].transparent:focus {
       color: #70a6bd;
       background-color: transparent; }
-  button.no-hover:hover, button.no-hover:focus, .no-hover.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.no-hover:hover, footer .responsive.contacts-container .no-hover.donation-button:hover, .no-hover.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.no-hover:focus, footer .responsive.contacts-container .no-hover.donation-button:focus, input[type="submit"].no-hover:hover, input[type="submit"].no-hover:focus {
+  button.no-hover:hover, button.no-hover:focus, .no-hover.button-square:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.no-hover:hover, footer .no-hover.donation-button:hover, .no-hover.button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a.no-hover:focus, footer .no-hover.donation-button:focus, input[type="submit"].no-hover:hover, input[type="submit"].no-hover:focus {
     color: #ffffff;
     background-color: transparent; }
 
@@ -1001,10 +1001,10 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
     height: 80px;
     font-size: 48px; }
 
-.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a, footer .responsive.contacts-container .donation-button {
+.button-square, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a, footer .donation-button {
   padding: 8px 16px;
   border: 1px solid; }
-  .button-square:hover, .button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:hover, footer .responsive.contacts-container .donation-button:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:focus, footer .responsive.contacts-container .donation-button:focus {
+  .button-square:hover, .button-square:focus, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:hover, footer .donation-button:hover, #masthead .main-navigation #primary-menu > .menu-item:last-of-type a:focus, footer .donation-button:focus {
     border: 1px solid #70a6bd; }
 
 #masthead {
@@ -1029,6 +1029,9 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
       #masthead .site-branding a img {
         max-height: 100%;
         width: auto; }
+    @media all and (max-width: 600px) {
+      #masthead .site-branding {
+        height: 64px; } }
   #masthead .main-navigation {
     display: inline-block;
     float: right;
@@ -1087,6 +1090,9 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
         #masthead.scrolled .site-branding a img {
           max-height: 100%;
           width: auto; }
+      @media all and (max-width: 600px) {
+        #masthead.scrolled .site-branding {
+          height: 48px; } }
     #masthead.scrolled .main-navigation {
       margin-top: 8px; }
 
@@ -1098,21 +1104,32 @@ footer {
   background-color: #005dab;
   padding: 16px; }
   footer .logo {
-    width: 144px;
-    vertical-align: top; }
+    width: 120px;
+    vertical-align: middle; }
   footer .address {
     display: inline-block;
-    vertical-align: top;
-    margin-left: 16px; }
-  footer .responsive.contacts-container {
-    text-align: right;
+    vertical-align: middle;
+    margin-left: 16px;
+    font-size: 14px; }
+  footer .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; }
+  footer a {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
     vertical-align: middle; }
-    footer .responsive.contacts-container a {
-      margin: 0 8px;
-      vertical-align: middle; }
-    footer .responsive.contacts-container .donation-button {
-      text-shadow: 0 0 4px #000000;
-      background-color: #ff527d; }
+  footer .donation-button {
+    text-shadow: 0 0 4px #000000;
+    background-color: #ff527d; }
+  @media all and (max-width: 768px) {
+    footer {
+      display: block;
+      text-align: center; }
+      footer .contact-container {
+        margin-top: 32px; } }
 
 .slideshow {
   position: relative;
@@ -1191,6 +1208,12 @@ footer {
     font-size: 36px;
     font-weight: 900;
     line-height: 1.2em; }
+    @media all and (max-width: 600px) {
+      .slideshow .caption {
+        font-size: 24px;
+        width: 100%;
+        padding-right: 32px;
+        margin-bottom: 8px; } }
   .slideshow .slideshow-control {
     text-shadow: 2px 2px 0px #000000;
     position: absolute;
@@ -1309,6 +1332,9 @@ body.home #about-communitas {
     @media all and (max-width: 1200px) {
       body.home #about-communitas .hook {
         padding: 32px 48px; } }
+    @media all and (max-width: 600px) {
+      body.home #about-communitas .hook {
+        font-size: 36px; } }
 body.home #impact-news {
   padding: 0; }
   body.home #impact-news ul {

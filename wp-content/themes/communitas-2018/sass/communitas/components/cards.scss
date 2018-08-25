@@ -35,7 +35,7 @@ a.card {
 .card-container {
     display: flex;
 
-    @media all and (max-width: $tablet) {
+    @media all and (max-width: $break-max) {
         display: block;
     }
 }
