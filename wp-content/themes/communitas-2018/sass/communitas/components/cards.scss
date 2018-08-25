@@ -1,7 +1,6 @@
 .card {
     position: relative;
     text-align: center;
-    border: 0;
 
     * {
         z-index: 1;
@@ -17,14 +16,10 @@
         display: inline-block;
         position: relative;
         padding-bottom: $padding-md;
-
-        // Cool double underline thing
-        @include double-underline;
     }
 
     p {
         position: relative;
-        text-align: left;
         font-size: $title;
     }
     }
@@ -33,7 +28,6 @@
     transition: background-color $transition;
 
     &:hover, &:focus {
-        border: 0;
         background-color: $teal;
     }
 }

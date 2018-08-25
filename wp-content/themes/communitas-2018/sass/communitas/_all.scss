@@ -23,6 +23,19 @@ a {
   }
 }
 
+h3, h4 {
+  display: inline-block;
+  border-bottom: 4px solid $accent;
+}
+
+h3 {
+  padding-bottom: $padding-sm;
+}
+
+h4 {
+  padding-bottom: $padding-xs;
+}
+
 // Misc overwrites
 a.custom-logo-link {
   &:hover {

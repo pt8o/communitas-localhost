@@ -888,6 +888,16 @@ a {
   a:hover, a:focus {
     border-bottom: 1px dotted; }
 
+h3, h4 {
+  display: inline-block;
+  border-bottom: 4px solid #ff527d; }
+
+h3 {
+  padding-bottom: 8px; }
+
+h4 {
+  padding-bottom: 4px; }
+
 a.custom-logo-link:hover {
   border-bottom-color: transparent; }
 a.custom-logo-link:focus {
@@ -1243,8 +1253,7 @@ footer {
 
 .card {
   position: relative;
-  text-align: center;
-  border: 0; }
+  text-align: center; }
   .card * {
     z-index: 1; }
   .card .card-title {
@@ -1254,30 +1263,13 @@ footer {
     display: inline-block;
     position: relative;
     padding-bottom: 16px; }
-    .card h4::before, .card h4::after {
-      content: ' ';
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      height: 2px;
-      background-color: #ff527d; }
-    .card h4::before {
-      width: 80px;
-      margin-left: -40px;
-      margin-top: 8px; }
-    .card h4::after {
-      margin-top: 16px;
-      width: 40px;
-      margin-left: -20px; }
   .card p {
     position: relative;
-    text-align: left;
     font-size: 24px; }
 
 a.card {
   transition: background-color 250ms; }
   a.card:hover, a.card:focus {
-    border: 0;
     background-color: #70a6bd; }
 
 .card-container {
@@ -1336,15 +1328,6 @@ body.page:not(.home) section {
     margin-bottom: 32px; }
     body.page:not(.home) section .subsection p {
       margin-top: 0; }
-body.page:not(.home) h3, body.page:not(.home) h4 {
-  display: inline-block;
-  border-bottom: 4px solid #ff527d; }
-body.page:not(.home) h3 {
-  padding-bottom: 8px; }
-body.page:not(.home) h4 {
-  padding-bottom: 4px; }
-body.page:not(.home) .card h4 {
-  border-bottom: 0; }
 
 body.page-id-7 .person {
   position: relative;

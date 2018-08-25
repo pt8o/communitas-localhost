@@ -17,21 +17,4 @@ body.page:not(.home) {
             }
         }
     }
-
-    h3, h4 {
-        display: inline-block;
-        border-bottom: 4px solid $accent;
-    }
-
-    h3 {
-        padding-bottom: $padding-sm;
-    }
-
-    h4 {
-        padding-bottom: $padding-xs;
-    }
-
-    .card h4 {
-        border-bottom: 0;
-    }
 }
