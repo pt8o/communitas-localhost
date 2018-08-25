@@ -18,13 +18,13 @@
         padding-bottom: $padding-md;
     }
 
-    p {
+    p, ul {
         position: relative;
         font-size: $title;
     }
-    }
+}
 
-    a.card {
+a.card {
     transition: background-color $transition;
 
     &:hover, &:focus {

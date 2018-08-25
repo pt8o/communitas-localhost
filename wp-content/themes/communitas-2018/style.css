@@ -1263,7 +1263,7 @@ footer {
     display: inline-block;
     position: relative;
     padding-bottom: 16px; }
-  .card p {
+  .card p, .card ul {
     position: relative;
     font-size: 24px; }
 
@@ -1303,11 +1303,21 @@ body.home #about-communitas {
     font-size: 48px;
     text-align: center;
     margin: 32px 0;
-    padding: 48px;
+    padding: 48px 120px;
     font-weight: 600;
     line-height: 1.2em; }
+    @media all and (max-width: 1200px) {
+      body.home #about-communitas .hook {
+        padding: 32px 48px; } }
 body.home #impact-news {
   padding: 0; }
+  body.home #impact-news ul {
+    padding: 0 32px;
+    text-align: left; }
+    body.home #impact-news ul li {
+      margin-bottom: 1.2em; }
+    body.home #impact-news ul b {
+      color: #005dab; }
   body.home #impact-news .news {
     position: relative;
     border-left: 1px solid #005dab; }
@@ -1444,6 +1454,9 @@ body.blog .entry-content > p:last-child {
   margin-bottom: 0; }
 body.blog .more-link {
   font-size: 36px; }
+
+body.page-id-9 article.page {
+  padding-bottom: 0; }
 
 article.post, article.page {
   position: relative;

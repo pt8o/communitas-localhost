@@ -37,28 +37,35 @@ body.home {
       font-size: $attention;
       text-align: center;
       margin: $padding-lg 0;
-      padding: $padding-xl;
+      padding: $padding-xl 120px;
       font-weight: $semibold;
       line-height: 1.2em;
+
+      @media all and (max-width: $tablet) {
+        padding: $padding-lg $padding-xl;
+      }
     }
   }
 
   #impact-news {
     padding: 0;
 
+    ul {
+      padding: 0 $padding-lg;
+      text-align: left;
+
+      li {
+        margin-bottom: 1.2em;
+      }
+
+      b {
+        color: $blue;
+      }
+    }
+
     .news {
       position: relative;
       border-left: 1px solid $blue;
-
-      // &::after {
-      //   @include pseudo;
-      //   top: 0;
-      //   left: 0;
-      //   margin-left: -2px;
-      //   width: 2px;
-      //   height: 100%;
-      //   background-color: $accent;
-      // }
 
       form {
         width: 100%;
