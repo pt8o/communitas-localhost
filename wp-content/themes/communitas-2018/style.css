@@ -1338,17 +1338,23 @@ body.home #about-communitas {
 body.home #impact-news {
   padding: 0; }
   body.home #impact-news ul {
-    padding: 0 32px;
+    margin: 0 32px;
     text-align: left; }
     body.home #impact-news ul li {
       margin-bottom: 1.2em; }
     body.home #impact-news ul b {
       color: #005dab; }
+    @media all and (max-width: 768px) {
+      body.home #impact-news ul {
+        padding: 0; } }
   body.home #impact-news .news {
     position: relative;
     border-left: 1px solid #005dab; }
     body.home #impact-news .news form {
       width: 100%; }
+    @media all and (max-width: 1200px) {
+      body.home #impact-news .news {
+        border-left: 0; } }
 
 body.page:not(.home) #main {
   position: relative; }

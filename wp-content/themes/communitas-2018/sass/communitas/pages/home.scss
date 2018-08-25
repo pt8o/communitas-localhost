@@ -55,7 +55,7 @@ body.home {
     padding: 0;
 
     ul {
-      padding: 0 $padding-lg;
+      margin: 0 $padding-lg;
       text-align: left;
 
       li {
@@ -65,6 +65,10 @@ body.home {
       b {
         color: $blue;
       }
+
+      @media all and (max-width: $break-tablet) {
+        padding: 0;
+      }
     }
 
     .news {
@@ -73,6 +77,10 @@ body.home {
 
       form {
         width: 100%;
+      }
+
+      @media all and (max-width: $break-max) {
+        border-left: 0;
       }
     }
   }
