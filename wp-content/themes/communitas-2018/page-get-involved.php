@@ -48,6 +48,7 @@ get_header();
 		?>
 
         <section>
+            <h2>Join our mailing list to stay in touch!</h2>
             <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
           <form
