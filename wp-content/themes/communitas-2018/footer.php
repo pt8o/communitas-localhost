@@ -39,11 +39,11 @@
       </div>
     </div><div class="responsive half contacts-container">
       <a class="responsive" href="mailto:info@communitasmontreal.org">
-        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-mail.png' ) ); ?>" alt="Email"/>
+        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/mail.png' ) ); ?>" alt="Email"/>
       </a><a class="responsive" href="https://twitter.com/Communitas_MTL">
-        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-twitter.png' ) ); ?>" alt="Twitter"/>
+        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/twitter.png' ) ); ?>" alt="Twitter"/>
       </a><a class="responsive" href="https://www.facebook.com/communitasmontreal/">
-        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon-facebook.png' ) ); ?>" alt="Facebook"/>
+        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/facebook.png' ) ); ?>" alt="Facebook"/>
       </a><a class="donation-button" href="<?php echo esc_url( home_url( '/donate/' ) ); ?>">
         Donate
       </a>
