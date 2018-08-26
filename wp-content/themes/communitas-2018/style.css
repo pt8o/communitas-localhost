@@ -1029,7 +1029,10 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
       #masthead .site-branding a img {
         max-height: 100%;
         width: auto; }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 1200px) {
+      #masthead .site-branding {
+        height: 80px; } }
+    @media all and (max-width: 768px) {
       #masthead .site-branding {
         height: 64px; } }
   #masthead .main-navigation {

@@ -29,7 +29,11 @@
       }
     }
 
-    @media all and (max-width: $break-phone) {
+    @media all and (max-width: $break-max) {
+      height: 80px;
+    }
+
+    @media all and (max-width: $break-tablet) {
       height: 64px;
     }
   }
