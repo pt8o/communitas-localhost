@@ -159,7 +159,7 @@
       }
 
       #primary-menu {
-        margin-top: 20px;
+        margin-top: 12px;
         margin-right: 0;
         padding-right: $padding-md;
 
@@ -189,7 +189,8 @@
           // border-right: 1px solid $white;
 
           .menu-item {
-            padding-right: $padding-sm;
+            margin: $padding-sm 0;
+            padding: $padding-sm;
 
             a {
               @include text-shadow-light;

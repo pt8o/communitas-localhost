@@ -1104,7 +1104,7 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
       top: auto;
       z-index: initial; }
     #masthead .main-navigation.toggled #primary-menu {
-      margin-top: 20px;
+      margin-top: 12px;
       margin-right: 0;
       padding-right: 16px; }
       #masthead .main-navigation.toggled #primary-menu .menu-item {
@@ -1122,7 +1122,8 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
         box-shadow: none;
         float: none; }
         #masthead .main-navigation.toggled #primary-menu .sub-menu .menu-item {
-          padding-right: 8px; }
+          margin: 8px 0;
+          padding: 8px; }
           #masthead .main-navigation.toggled #primary-menu .sub-menu .menu-item a {
             text-shadow: 0 0 4px #000000;
             color: #ffffff; }
