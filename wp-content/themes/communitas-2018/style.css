@@ -1039,6 +1039,8 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
     margin-left: auto;
     margin-top: 16px;
     transition: margin-top 250ms; }
+    #masthead .main-navigation .menu-toggle {
+      border: 1px solid #ffffff; }
     #masthead .main-navigation #primary-menu {
       position: relative; }
       @media screen and (max-width: 768px) {
@@ -1095,6 +1097,40 @@ button, .button-square, #masthead .main-navigation #primary-menu > .menu-item:la
           height: 48px; } }
     #masthead.scrolled .main-navigation {
       margin-top: 8px; }
+  @media all and (max-width: 768px) {
+    #masthead .main-navigation.toggled .sub-menu {
+      position: relative;
+      left: auto;
+      top: auto;
+      z-index: initial; }
+    #masthead .main-navigation.toggled #primary-menu {
+      margin-top: 20px;
+      margin-right: 0;
+      padding-right: 16px; }
+      #masthead .main-navigation.toggled #primary-menu .menu-item {
+        margin: 8px 0;
+        padding: 8px; }
+        #masthead .main-navigation.toggled #primary-menu .menu-item a {
+          display: inline-block; }
+      #masthead .main-navigation.toggled #primary-menu .menu-item-has-children {
+        margin: 0;
+        padding: 0; }
+        #masthead .main-navigation.toggled #primary-menu .menu-item-has-children > a {
+          display: none; }
+      #masthead .main-navigation.toggled #primary-menu .sub-menu {
+        background-color: transparent;
+        box-shadow: none;
+        float: none; }
+        #masthead .main-navigation.toggled #primary-menu .sub-menu .menu-item {
+          padding-right: 8px; }
+          #masthead .main-navigation.toggled #primary-menu .sub-menu .menu-item a {
+            text-shadow: 0 0 4px #000000;
+            color: #ffffff; }
+    #masthead.scrolled .main-navigation.toggled #primary-menu {
+      width: 100%;
+      background-color: #005dab; }
+      #masthead.scrolled .main-navigation.toggled #primary-menu .sub-menu .menu-item a {
+        text-shadow: none; } }
 
 footer {
   position: relative;

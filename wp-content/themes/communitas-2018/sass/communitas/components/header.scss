@@ -44,6 +44,11 @@
     margin-top: $padding-md;
     transition: margin-top $transition;
 
+    // Menu button (tablet and smaller)
+    .menu-toggle {
+      border: 1px solid $white;
+    }
+
     // The menu options themselves
     #primary-menu {
       position: relative;
@@ -139,6 +144,78 @@
 
     .main-navigation {
       margin-top: $padding-sm;
+    }
+  }
+
+  // MOBILE
+  // Break point for tablet is also break point for "Menu" button
+  @media all and (max-width: $break-tablet) {
+    .main-navigation.toggled {
+      .sub-menu {
+        position: relative;
+        left: auto;
+        top: auto;
+        z-index: initial;
+      }
+
+      #primary-menu {
+        margin-top: 20px;
+        margin-right: 0;
+        padding-right: $padding-md;
+
+        .menu-item {
+          margin: $padding-sm 0;
+          padding: $padding-sm;
+
+          a {
+            display: inline-block;
+          }
+        }
+        
+        .menu-item-has-children {
+          margin: 0; padding: 0;
+
+          > a {
+            display: none;
+          }
+        }
+
+        .sub-menu {
+          background-color: transparent;
+          box-shadow: none;
+          float: none;
+          // padding-right: $padding-md;
+          // margin-right: $padding-sm;
+          // border-right: 1px solid $white;
+
+          .menu-item {
+            padding-right: $padding-sm;
+
+            a {
+              @include text-shadow-light;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    &.scrolled {
+      .main-navigation.toggled {
+
+        #primary-menu {
+          width: 100%;
+          background-color: $blue;
+
+          .sub-menu {
+            .menu-item {
+              a {
+                text-shadow: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
