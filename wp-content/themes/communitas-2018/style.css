@@ -872,6 +872,18 @@ a.card {
     color: inherit;
     border: 0; }
 
+.inline-graphic-horizontal {
+  display: block; }
+  @media all and (max-width: 600px) {
+    .inline-graphic-horizontal {
+      display: none; } }
+
+.inline-graphic-vertical {
+  display: none; }
+  @media all and (max-width: 600px) {
+    .inline-graphic-vertical {
+      display: block; } }
+
 body {
   font-family: 'Mada', sans-serif;
   font-size: 20px;
@@ -882,7 +894,7 @@ p {
   line-height: 1.5em; }
 
 a {
-  display: inline-block;
+  display: inline;
   text-decoration: none;
   border-bottom: 1px dotted transparent; }
   a:hover, a:focus {

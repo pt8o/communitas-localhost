@@ -42,6 +42,7 @@ $break-phone: 600px;
   }
 }
 
+// Backgrounds
 .bg-dark {
   color: $white;
   background-color: $black;
@@ -51,6 +52,7 @@ $break-phone: 600px;
   background-color: $teal;
 }
 
+// Layout components
 section {
   padding: $padding-md;
 }
@@ -69,6 +71,22 @@ a.card {
   }
 }
 
+// Show/hide based on screen size
+.inline-graphic-horizontal {
+  display: block;
+  @media all and (max-width: $break-phone) {
+    display: none;
+  }
+}
+
+.inline-graphic-vertical {
+  display: none;
+  @media all and (max-width: $break-phone) {
+    display: block;
+  }
+}
+
+// Common mixins
 @mixin clearfix() {
   &::after {
     content: "";
