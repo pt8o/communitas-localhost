@@ -18,11 +18,23 @@ footer {
     font-size: $small-text;
   }
 
-  .contact-container {
+
+  .right-container {
     display: flex;
+    flex-direction: column;
+    margin-left: auto;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
+
+    .contact-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .copyright {
+      margin-top: $padding-md;
+    }
   }
 
   a {

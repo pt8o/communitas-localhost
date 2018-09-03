@@ -38,16 +38,19 @@
         info@communitasmontreal.org
       </div>
     
-      <div class="contact-container">
-      <a href="mailto:info@communitasmontreal.org">
-        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/mail.png' ) ); ?>" alt="Email"/>
-      </a><a href="https://twitter.com/Communitas_MTL">
-        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/twitter.png' ) ); ?>" alt="Twitter"/>
-      </a><a href="https://www.facebook.com/communitasmontreal/">
-        <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/facebook.png' ) ); ?>" alt="Facebook"/>
-      </a><a class="donation-button" href="<?php echo esc_url( home_url( '/donate/' ) ); ?>">
-        Donate
-      </a>
+      <div class="right-container">
+        <div class="contact-container">
+        <a href="mailto:info@communitasmontreal.org">
+          <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/mail.png' ) ); ?>" alt="Email"/>
+        </a><a href="https://twitter.com/Communitas_MTL">
+          <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/twitter.png' ) ); ?>" alt="Twitter"/>
+        </a><a href="https://www.facebook.com/communitasmontreal/">
+          <img class="icon" src="<?php echo esc_url( home_url( '/wp-content/themes/communitas-2018/static/icon/facebook.png' ) ); ?>" alt="Facebook"/>
+        </a><a class="donation-button" href="<?php echo esc_url( home_url( '/donate/' ) ); ?>">
+          Donate
+        </a>
+        </div>
+        <div class="copyright">&#169; Communitas</div>
       </div>
 
 	</footer><!-- #colophon -->

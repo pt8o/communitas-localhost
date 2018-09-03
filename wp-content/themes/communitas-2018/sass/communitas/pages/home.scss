@@ -57,6 +57,7 @@ body.home {
     ul {
       margin: 0 $padding-lg;
       text-align: left;
+      list-style: none;
 
       li {
         margin-bottom: 1.2em;
@@ -64,6 +65,7 @@ body.home {
 
       b {
         color: $blue;
+        font-size: 125%;
       }
 
       @media all and (max-width: $break-tablet) {

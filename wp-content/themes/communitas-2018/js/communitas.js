@@ -49,6 +49,13 @@
                 slides[i].removeClass('left').addClass('right');
             }
         }
+
+        $('.slideshow-control.disabled').removeClass('disabled');
+        if (current === 0) {
+            $('#slide-left').addClass('disabled');
+        } else if (current === max) {
+            $('#slide-right').addClass('disabled');
+        }
     };
 
     $('.slideshow-control').on('click tap', function() {
@@ -63,43 +70,48 @@
 
         if (current != temp) {
             runSlideshow();
-        }
-
-        if (current === 0) {
-            $('#slide-left').addClass('disabled');
-        } else if (current === max) {
-            $('#slide-right').addClass('disabled');
-        } else {
-            $('.slideshow-control.disabled').removeClass('disabled');
+            window.clearInterval(autoplay);
         }
     });
 
-    $('.slideshow-index').on('click tap', function() {
-        var temp = current;
-        current = parseInt(
-            $(this).attr('id').replace('slideshow-index-', '')
-        ) - 1;
+    // Slideshow index, doesn't exist rn
+    // $('.slideshow-index').on('click tap', function() {
+    //     var temp = current;
+    //     current = parseInt(
+    //         $(this).attr('id').replace('slideshow-index-', '')
+    //     ) - 1;
 
-        if (current != temp) {
-            runSlideshow();
-        }
-    });
+    //     if (current != temp) {
+    //         runSlideshow();
+    //     }
+    // });
+
+    // Slideshow autoplay
+    var autoplay = window.setInterval(function() {
+        current += 1;
+        if (current > max) { current = 0 };
+        runSlideshow();
+    }, 5000);
 
     // Video controls
     $('.video-thumbnail button').each(function() {
         $(this).on('click tap', function() {
             var videocontainer = $(this).parent().next('.video-container');
-            videocontainer.addClass('show');
-
             var videocontent = videocontainer.find('.video-content');
+
             var url = videocontent.attr('data-url');
             videocontent.html("<iframe src='https://player.vimeo.com/video/"
                 + url
                 + "?title=0&byline=0&portrait=0' style='position:absolute;top:10%;left:10%;width:80%;height:80%;border-radius:8px;' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
                 + "<script src='https://player.vimeo.com/api/player.js'></script>");
+
+            window.setTimeout(function() {
+                videocontainer.addClass('show');
+            }, 350);
         });
     });
 
+    // Close slideshow
     $('.video-overlay, .video-container .close').each(function() {
         $(this).on('click tap', function() {
             var videocontent = $(this).parent().find('.video-content');
@@ -107,4 +119,11 @@
             $('.video-container').removeClass('show');
         });
     });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            $('.video-container.show').find('.video-content').html('');
+            $('.video-container.show').removeClass('show');
+       }
+   });
 } )( jQuery );

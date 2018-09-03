@@ -117,17 +117,7 @@ get_header();
                 <section> 
                     <h3><?php echo get_sub_field('title'); ?></h3><br/>
 
-                    <?php while (have_rows('partners')): the_row(); ?>
-                        <div class="partner">
-                            <?php if (get_sub_field('image')) { ?>
-                                <img
-                                    class="logo"
-                                    src="<?php echo get_sub_field('image'); ?>"
-                                />
-                            <?php } ?>
-                            <span class="name"><?php echo get_sub_field('name'); ?></span>
-                        </div>
-                    <?php endwhile; ?>
+                    <?php while (have_rows('partners')): the_row(); ?><div class="partner responsive half"><?php if (get_sub_field('image')) { ?> <img class="logo" src="<?php echo get_sub_field('image'); ?>"/><?php } ?><div class="name"><?php echo get_sub_field('name'); ?></div></div><?php endwhile; ?>
                 </section>
             <?php endif; ?>
 

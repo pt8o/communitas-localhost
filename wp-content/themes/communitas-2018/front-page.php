@@ -80,7 +80,7 @@ get_header();
       <section id="about-communitas">
         <p class="hook"><?php the_field('about_communitas'); ?></p>
         <div class="card-container">
-          <a href="<?php echo esc_url( home_url( '/challenges' ) ); ?>" class="card responsive third">
+          <a href="<?php echo esc_url( home_url( '/our-work/circles' ) ); ?>" class="card responsive third">
             <?php $why_it_matters = get_field('why_it_matters'); ?>
             <h4><?php echo $why_it_matters['title']; ?></h4>
             <p><?php echo $why_it_matters['text']; ?></p>

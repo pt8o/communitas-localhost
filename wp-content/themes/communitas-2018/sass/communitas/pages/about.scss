@@ -1,22 +1,25 @@
 body.page-id-7 {
     .person {
         position: relative;
+        vertical-align: top;
         display: inline-block;
         margin-right: $padding-md;
         margin-bottom: $padding-md;
-        border-radius: $corner;
         overflow: hidden;
 
         .portrait {
+            position: relative;
             display: inline-block;
-            vertical-align: middle;
+            border-radius: $corner;
             
             $portrait-size: 240px;
             min-width: $portrait-size;
             width: $portrait-size;
             min-height: $portrait-size;
             height: $portrait-size;
-
+            border-radius: $corner;
+            
+            overflow: hidden;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -25,15 +28,15 @@ body.page-id-7 {
                 background-color: $blue;
                 background-size: 75%;
             }
-        }
 
-        // overlay to make text more legible
-        &::before {
-            @include pseudo;
-            @include overlay;
-            background-color: $black;
-            opacity: 0;
-            transition: opacity $transition;
+            // overlay to make text more legible
+            &::before {
+                @include pseudo;
+                @include overlay;
+                background-color: $black;
+                opacity: 0;
+                transition: opacity $transition;
+            }
         }
 
         .person-text {
@@ -55,7 +58,7 @@ body.page-id-7 {
         }
     
         &:hover {
-            &::before {
+            .portrait::before {
                 opacity: 0.7;
             }
             
@@ -63,16 +66,38 @@ body.page-id-7 {
                 opacity: 1;
             }
         }
+
+        @media all and (max-width: $break-tablet) {
+            &:hover {
+                .portrait::before {
+                    display: none;
+                }
+            }
+
+            .person-text {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                margin-top: $padding-sm;
+                color: $black;
+                opacity: 1;
+            }
+        }
     }
 
     .partner {
-        display: block;
+        display: inline-block;
         margin: $padding-md 0 $padding-lg;
+        text-align: center;
+        vertical-align: middle;
 
         .logo {
             vertical-align: middle;
-            max-width: 144px;
-            max-height: 120px;
+            max-width: 50%;
+        }
+
+        .name {
+            margin-top: $padding-md;
         }
     }
 }
