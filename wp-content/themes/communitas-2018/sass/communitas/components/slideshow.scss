@@ -117,6 +117,14 @@
       padding-right: $padding-lg;
       margin-bottom: $padding-sm;
     }
+
+    a {
+      color: $white;
+
+      &:hover {
+        border-bottom: 1px dotted transparent;
+      }
+    }
   }
 
   .slideshow-control {

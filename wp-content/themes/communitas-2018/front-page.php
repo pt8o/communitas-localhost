@@ -22,9 +22,17 @@ get_header();
 
               if ($content_type == 'image'):
                 $image_url = get_sub_field('image');
-                ?>
-                  <div class="image" style="background-image:url('<?php echo $image_url ?>')"></div>
-                <?php
+                $link = get_sub_field('link');
+
+                if ($link != ''):
+                  ?>
+                    <a href="<?php echo $link ?>"><div class="image" style="background-image:url('<?php echo $image_url ?>')"></div></a>
+                  <?php
+                else:
+                  ?>
+                    <div class="image" style="background-image:url('<?php echo $image_url ?>')"></div>
+                  <?php
+                endif;
                 echo '<br/>';
 
               else:
@@ -46,7 +54,9 @@ get_header();
               if ($caption != ''):
                 ?>
                   <div class="caption">
-                    <span><?php echo $caption ?></span>
+                    <?php if ($link != ''): ?><a href="<?php echo $link ?>"><?php endif ?>
+                      <span><?php echo $caption ?></span>
+                    <?php if ($link != ''): ?></a><?php endif ?>
                   </div>
                 <?php
               endif;

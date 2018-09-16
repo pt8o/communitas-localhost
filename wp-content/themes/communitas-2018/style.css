@@ -872,6 +872,11 @@ a.card {
     color: inherit;
     border: 0; }
 
+.right-sidebar {
+  float: right;
+  text-align: center;
+  margin: 0 32px; }
+
 .inline-graphic-horizontal {
   display: block; }
   @media all and (max-width: 600px) {
@@ -1273,6 +1278,10 @@ footer {
         width: 100%;
         padding-right: 32px;
         margin-bottom: 8px; } }
+    .slideshow .caption a {
+      color: #ffffff; }
+      .slideshow .caption a:hover {
+        border-bottom: 1px dotted transparent; }
   .slideshow .slideshow-control {
     text-shadow: 2px 2px 0px #000000;
     position: absolute;
@@ -1566,6 +1575,10 @@ body.blog .more-link {
 
 body.page-id-9 article.page {
   padding-bottom: 0; }
+
+body.page-id-13 .post-13 {
+  padding-bottom: 0;
+  margin-bottom: 0; }
 
 article.post, article.page {
   position: relative;

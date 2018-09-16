@@ -29,7 +29,7 @@ get_header();
                 ?>');"
             >
                 <div class="headline">
-					<h2>Blog</h2>
+					<h2><?php echo wp_title('') ?></h2>
                 </div>
 			</div>				
 			
