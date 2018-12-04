@@ -1228,7 +1228,8 @@ footer {
         left: 50%;
         top: 50%;
         margin-top: -40px;
-        margin-left: -40px; }
+        margin-left: -40px;
+        border: 5px solid; }
         .slideshow .entry .video-thumbnail .video-play:hover {
           border-color: #70a6bd; }
     .slideshow .entry .video-container {
@@ -1541,6 +1542,8 @@ body.page-id-22 .newsletter-edition {
     transition: opacity 250ms; }
   body.page-id-22 .newsletter-edition:hover .overlay {
     opacity: 1; }
+body.page-id-22 .newsletter-past-edition {
+  padding-right: 8px; }
 
 body.blog article.post {
   position: relative;

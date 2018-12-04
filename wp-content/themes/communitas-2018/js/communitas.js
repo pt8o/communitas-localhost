@@ -91,7 +91,7 @@
         current += 1;
         if (current > max) { current = 0 };
         runSlideshow();
-    }, 5000);
+    }, 8000);
 
     // Video controls
     $('.video-thumbnail button').each(function() {
